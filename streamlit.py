@@ -7,6 +7,7 @@ from io import BytesIO
 import uuid
 import os
 import re
+import datetime
 
 # Initialize Gemini client
 client = genai.Client(api_key=st.secrets["gemini_api_key"])
@@ -17,7 +18,8 @@ with open("tender_prompt.txt", "r") as file:
 
 st.title("📄 AI Tender Document Generator")
 
-# Helper: Suggest follow-up sections
+# --- Utilities ---
+
 def get_prompt_suggestions(user_input, ai_response):
     prompt = f"""
 You are a helpful AI assistant that helps users draft professional tender documents. Based on the user's latest input and the AI's response, suggest 3 to 5 logical follow-up prompts or sections the user might want to include next.
@@ -49,16 +51,13 @@ Return only the list like:
         print(f"Error parsing suggestions: {e}")
     return ["Include scope of work", "Define bidder qualifications", "Mention deliverables"]
 
-# Helper: Format all AI assistant replies into a well-styled Word doc
 def generate_formatted_tender_doc(messages):
     doc = Document()
     doc.add_heading("Tender Document", 0)
-
     style = doc.styles['Normal']
     font = style.font
     font.name = 'Calibri'
     font.size = Pt(11)
-
     for msg in messages:
         if msg["role"] == "assistant":
             lines = msg["content"].strip().split("\n")
@@ -69,19 +68,51 @@ def generate_formatted_tender_doc(messages):
                     doc.add_paragraph(line.strip().lstrip("-• "), style='List Bullet')
                 elif line.strip():
                     doc.add_paragraph(line.strip())
-    
     buffer = BytesIO()
     doc.save(buffer)
     buffer.seek(0)
     return buffer
 
-# Helper: Extract placeholders like [Text], <Text>, or {{Text}}
 def extract_placeholders(text):
     matches = re.findall(r'\[.*?\]|\{.*?\}|\<.*?\>', text)
-    unique = sorted(set([m.strip("[]{}<>") for m in matches]))
-    return unique
+    return sorted(set([m.strip("[]{}<>") for m in matches]))
 
-# Session state initialization
+@st.cache_data(show_spinner=False)
+def get_placeholder_explanation(placeholder):
+    try:
+        prompt = f"""
+You're an expert in tender documentation. For the placeholder `{placeholder}`, explain in one line:
+- What it means in the context of a tender
+- Mention any format or units (e.g., 'in INR', 'format: dd-mm-yyyy', 'in days')
+
+Return a single sentence suitable for showing below a form input field.
+"""
+        chat = client.chats.create(
+            model="gemini-2.0-flash",
+            config=types.GenerateContentConfig(system_instruction="You generate field descriptions for tender placeholders.")
+        )
+        return chat.send_message(prompt).text.strip()
+    except:
+        return "Enter an appropriate value (text, date, or number as required)."
+
+def validate_input(placeholder, value):
+    placeholder = placeholder.lower()
+
+    if "date" in placeholder or "deadline" in placeholder:
+        if isinstance(value, datetime.date):
+            return True, ""
+        return False, "Enter a valid date"
+
+    elif "amount" in placeholder or "value" in placeholder or "price" in placeholder:
+        # Accept both "50000" or "50000 INR"
+        num_part = value.split()[0].replace(",", "").replace(".", "")
+        if num_part.isdigit():
+            return True, ""
+        return False, "Enter amount starting with numeric value (e.g., 50000 or 50000 INR)"
+
+    return True, ""
+
+# --- Session state ---
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
 
@@ -103,36 +134,34 @@ if "last_response" not in st.session_state:
 if "suggestions" not in st.session_state:
     st.session_state.suggestions = []
 
-# Initial greeting
+# --- Initial greeting ---
 if not st.session_state.messages:
-    greeting = "Hello! I can help you draft a professional tender document. Tell me your requirement to get started."
-    st.session_state.messages.append({"role": "assistant", "content": greeting})
+    st.session_state.messages.append({
+        "role": "assistant",
+        "content": "Hello! I can help you draft a professional tender document. Tell me your requirement to get started."
+    })
 
-# Guided input for common tender sections
+# --- Guided Template Section ---
 with st.expander("🧩 Need help drafting your requirement?"):
     st.markdown("Choose a template section to start drafting your tender:")
     template_options = [
-        "Scope of Work",
-        "Eligibility Criteria",
-        "Evaluation Method",
-        "Timeline and Deliverables",
-        "Terms & Conditions"
+        "Scope of Work", "Eligibility Criteria", "Evaluation Method",
+        "Timeline and Deliverables", "Terms & Conditions"
     ]
     selected_template = st.selectbox("Select a requirement to draft", template_options)
     if st.button("Generate Draft Section"):
-        template_prompt = f"Write a professional and detailed section for: {selected_template}. Use placeholders like [Insert Project Name] if data is missing."
-        st.session_state.selected_prompt = template_prompt
+        prompt = f"Write a professional and detailed section for: {selected_template}. Use placeholders like [Insert Project Name] if data is missing."
+        st.session_state.selected_prompt = prompt
         st.rerun()
 
-# Show conversation history
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+# --- Chat History ---
+for msg in st.session_state.messages:
+    with st.chat_message(msg["role"]):
+        st.markdown(msg["content"])
 
-# Input field
+# --- Handle user chat input ---
 user_input = st.chat_input("Describe what the tender is for...")
 
-# Handle user input
 if user_input:
     with st.chat_message("user"):
         st.markdown(user_input)
@@ -144,15 +173,13 @@ if user_input:
 
     st.session_state.last_response = bot_response
     st.session_state.messages.append({"role": "assistant", "content": bot_response})
-
     with st.chat_message("assistant"):
         st.markdown(bot_response)
 
     st.session_state.suggestions = get_prompt_suggestions(user_input, bot_response)
-
     st.rerun()
 
-# Handle clicked suggestions or selected template
+# --- Handle AI-generated prompts ---
 if st.session_state.selected_prompt:
     prompt = st.session_state.selected_prompt
     with st.chat_message("user"):
@@ -165,7 +192,6 @@ if st.session_state.selected_prompt:
 
     st.session_state.last_response = bot_response
     st.session_state.messages.append({"role": "assistant", "content": bot_response})
-
     with st.chat_message("assistant"):
         st.markdown(bot_response)
 
@@ -173,16 +199,16 @@ if st.session_state.selected_prompt:
     st.session_state.selected_prompt = None
     st.rerun()
 
-# Show follow-up suggestions
+# --- Suggest next sections ---
 if st.session_state.suggestions and not st.session_state.selected_prompt:
     with st.chat_message("assistant"):
         st.markdown("Would you like to include:")
-        for i, suggestion in enumerate(st.session_state.suggestions):
-            if st.button(suggestion, key=f"suggest_{i}_{st.session_state.session_id}"):
-                st.session_state.selected_prompt = suggestion
+        for i, sug in enumerate(st.session_state.suggestions):
+            if st.button(sug, key=f"suggest_{i}_{st.session_state.session_id}"):
+                st.session_state.selected_prompt = sug
                 st.rerun()
 
-# Check and replace placeholders in latest AI response
+# --- Fill placeholders ---
 if st.session_state.last_response:
     placeholders = extract_placeholders(st.session_state.last_response)
     if placeholders:
@@ -190,21 +216,42 @@ if st.session_state.last_response:
             st.markdown("📝 Please fill in the following missing details to complete the section:")
 
             filled = {}
+            validation_errors = {}
+
             for key in placeholders:
-                filled[key] = st.text_input(f"{key}:", key=f"placeholder_{key}")
+                explanation = get_placeholder_explanation(key)
+                label = f"{key}:"
 
-            if all(filled.values()) and st.button("✅ Update Section with Details", key="fill_data_button"):
-                updated_response = st.session_state.last_response
+                if "date" in key.lower() or "deadline" in key.lower():
+                    filled[key] = st.date_input(label, key=f"input_{key}")
+                elif "amount" in key.lower() or "value" in key.lower() or "price" in key.lower():
+                    filled[key] = st.text_input(label, key=f"input_{key}")
+                    currency = st.selectbox(f"{key} Currency", ["INR", "USD", "EUR"], key=f"currency_{key}")
+                    filled[key] += f" {currency}"
+                else:
+                    filled[key] = st.text_input(label, key=f"input_{key}")
+
+                if explanation:
+                    st.caption(f"ℹ️ {explanation}")
+
+                valid, err = validate_input(key, filled[key])
+                if not valid:
+                    validation_errors[key] = err
+
+            if all(filled.values()) and not validation_errors and st.button("✅ Update Section with Details"):
+                updated = st.session_state.last_response
                 for key, val in filled.items():
-                    updated_response = re.sub(rf"[\[\{{\<]{key}[\]\}}\>]", val, updated_response)
-
-                st.session_state.messages[-1]["content"] = updated_response
-                st.session_state.last_response = updated_response
-
+                    updated = re.sub(rf"[\[\{{\<]{key}[\]\}}\>]", str(val), updated)
+                st.session_state.messages[-1]["content"] = updated
+                st.session_state.last_response = updated
                 st.success("✅ Updated draft with your inputs!")
                 st.rerun()
 
-# Word document download
+            if validation_errors:
+                for k, err in validation_errors.items():
+                    st.error(f"{k}: {err}")
+
+# --- Word document download ---
 if any(m["role"] == "assistant" for m in st.session_state.messages):
     word_file = generate_formatted_tender_doc(st.session_state.messages)
     st.download_button(
