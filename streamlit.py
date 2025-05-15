@@ -3,6 +3,9 @@ from google import genai
 from google.genai import types
 from docx import Document
 from docx.shared import Pt
+from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
+from docx.oxml.ns import qn
+from docx.oxml import OxmlElement
 from io import BytesIO
 import uuid
 import os
@@ -18,8 +21,13 @@ with open("tender_prompt.txt", "r") as file:
 
 st.title("📄 AI Tender Document Generator")
 
-# --- Utilities ---
+# --- Sidebar Metadata Inputs ---
+st.sidebar.header("Tender Metadata")
+tender_title = st.sidebar.text_input("Tender Title", "AI-Based Digital Infrastructure")
+tender_number = st.sidebar.text_input("Tender Number", "TDR-2024-001")
+issue_date = st.sidebar.date_input("Issue Date", datetime.date.today())
 
+# --- Utilities ---
 def get_prompt_suggestions(user_input, ai_response):
     prompt = f"""
 You are a helpful AI assistant that helps users draft professional tender documents. Based on the user's latest input and the AI's response, suggest 3 to 5 logical follow-up prompts or sections the user might want to include next.
@@ -51,32 +59,6 @@ Return only the list like:
         print(f"Error parsing suggestions: {e}")
     return ["Include scope of work", "Define bidder qualifications", "Mention deliverables"]
 
-def generate_formatted_tender_doc(messages):
-    doc = Document()
-    doc.add_heading("Tender Document", 0)
-    style = doc.styles['Normal']
-    font = style.font
-    font.name = 'Calibri'
-    font.size = Pt(11)
-    for msg in messages:
-        if msg["role"] == "assistant":
-            lines = msg["content"].strip().split("\n")
-            for line in lines:
-                if line.strip().endswith(":"):
-                    doc.add_heading(line.strip(), level=1)
-                elif line.strip().startswith("-") or line.strip().startswith("•"):
-                    doc.add_paragraph(line.strip().lstrip("-• "), style='List Bullet')
-                elif line.strip():
-                    doc.add_paragraph(line.strip())
-    buffer = BytesIO()
-    doc.save(buffer)
-    buffer.seek(0)
-    return buffer
-
-def extract_placeholders(text):
-    matches = re.findall(r'\[.*?\]|\{.*?\}|\<.*?\>', text)
-    return sorted(set([m.strip("[]{}<>") for m in matches]))
-
 @st.cache_data(show_spinner=False)
 def get_placeholder_explanation(placeholder):
     try:
@@ -95,22 +77,80 @@ Return a single sentence suitable for showing below a form input field.
     except:
         return "Enter an appropriate value (text, date, or number as required)."
 
+def extract_placeholders(text):
+    matches = re.findall(r'\[.*?\]|\{.*?\}|\<.*?\>', text)
+    return sorted(set([m.strip("[]{}<>") for m in matches]))
+
 def validate_input(placeholder, value):
     placeholder = placeholder.lower()
-
     if "date" in placeholder or "deadline" in placeholder:
         if isinstance(value, datetime.date):
             return True, ""
         return False, "Enter a valid date"
-
     elif "amount" in placeholder or "value" in placeholder or "price" in placeholder:
-        # Accept both "50000" or "50000 INR"
         num_part = value.split()[0].replace(",", "").replace(".", "")
         if num_part.isdigit():
             return True, ""
         return False, "Enter amount starting with numeric value (e.g., 50000 or 50000 INR)"
-
     return True, ""
+
+def add_page_number(section):
+    footer = section.footer
+    paragraph = footer.paragraphs[0]
+    paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
+    run = paragraph.add_run()
+    fldChar1 = OxmlElement('w:fldChar')
+    fldChar1.set(qn('w:fldCharType'), 'begin')
+    instrText = OxmlElement('w:instrText')
+    instrText.set(qn('xml:space'), 'preserve')
+    instrText.text = "PAGE"
+    fldChar2 = OxmlElement('w:fldChar')
+    fldChar2.set(qn('w:fldCharType'), 'end')
+    run._r.append(fldChar1)
+    run._r.append(instrText)
+    run._r.append(fldChar2)
+
+def generate_formatted_tender_doc(messages):
+    doc = Document()
+    doc.add_paragraph()
+    title = doc.add_heading("Tender Document", 0)
+    title.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+
+    doc.add_paragraph(f"Tender Title: {tender_title}").alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    doc.add_paragraph(f"Tender Number: {tender_number}").alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    doc.add_paragraph(f"Issue Date: {issue_date.strftime('%d-%m-%Y')}").alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    doc.add_page_break()
+
+    style = doc.styles['Normal']
+    font = style.font
+    font.name = 'Calibri'
+    font.size = Pt(11)
+
+    for msg in messages:
+        if msg["role"] == "assistant":
+            content = msg["content"].strip()
+            for line in content.split("\n"):
+                line = line.strip()
+                if not line:
+                    continue
+                if line.endswith(":") and len(line.split()) < 10:
+                    doc.add_heading(line.rstrip(":"), level=1)
+                elif re.match(r"^[-\u2022]\s", line):
+                    doc.add_paragraph(line[2:].strip(), style='List Bullet')
+                else:
+                    doc.add_paragraph(line.strip())
+
+    section = doc.sections[0]
+    footer = section.footer
+    footer_para = footer.paragraphs[0]
+    footer_para.text = "Confidential - Generated via AI Tender Assistant"
+    footer_para.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    add_page_number(section)
+
+    buffer = BytesIO()
+    doc.save(buffer)
+    buffer.seek(0)
+    return buffer
 
 # --- Session state ---
 if "session_id" not in st.session_state:
@@ -142,17 +182,17 @@ if not st.session_state.messages:
     })
 
 # --- Guided Template Section ---
-with st.expander("🧩 Need help drafting your requirement?"):
-    st.markdown("Choose a template section to start drafting your tender:")
-    template_options = [
-        "Scope of Work", "Eligibility Criteria", "Evaluation Method",
-        "Timeline and Deliverables", "Terms & Conditions"
-    ]
-    selected_template = st.selectbox("Select a requirement to draft", template_options)
-    if st.button("Generate Draft Section"):
-        prompt = f"Write a professional and detailed section for: {selected_template}. Use placeholders like [Insert Project Name] if data is missing."
-        st.session_state.selected_prompt = prompt
-        st.rerun()
+# with st.expander("🧩 Need help drafting your requirement?"):
+#     st.markdown("Choose a template section to start drafting your tender:")
+#     template_options = [
+#         "Scope of Work", "Eligibility Criteria", "Evaluation Method",
+#         "Timeline and Deliverables", "Terms & Conditions"
+#     ]
+#     selected_template = st.selectbox("Select a requirement to draft", template_options)
+#     if st.button("Generate Draft Section"):
+#         prompt = f"Write a professional and detailed section for: {selected_template}. Use placeholders like [Insert Project Name] if data is missing."
+#         st.session_state.selected_prompt = prompt
+#         st.rerun()
 
 # --- Chat History ---
 for msg in st.session_state.messages:
