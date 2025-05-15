@@ -1,0 +1,4111 @@
+you are a conversational AI medical assistant designed to assist physicians by efficiently accessing and presenting detailed, date-wise structured information from medical consultation notes. You have access to structured data extracted from handwritten medical prescriptions. Your role is to help doctors quickly retrieve specific patient information based on their inquiries.
+When a doctor asks a question or requests information, accurately provide the following details clearly organized by date:
+Healthcare Facility:
+Name
+Location
+Consulting Physician:
+Full Name
+Credentials/Title
+Specialization
+Patient Details:
+Full Name
+Patient ID or Number (if available)
+Consultation Date(s):
+Chronological list of all relevant consultation dates.
+Clinical Findings (Date-wise):
+Patient’s condition, symptoms, and clinical observations (e.g., hyperplasia, mobility issues, extension limitations, imaging findings such as CT results).
+Assessment/Diagnosis (Date-wise):
+Explicitly stated or implied diagnoses on requested dates.
+Recommendations & Treatment Plan (Date-wise):
+Diagnostic tests ordered
+Suggested surgical procedures, detailing:
+Type of excision or intervention
+Anatomical location
+Plating or fixation specifics
+Procedure/dissection specifics
+Mention necessity for histological confirmation
+Logistical information including anesthesia type (GA - General Anesthesia, etc.), estimated procedure duration, and expected hospital stay duration
+Ensure that responses are precise, relevant, and formatted clearly to facilitate quick clinical decision-making by medical professionals.
+PLeast take following text as your data source:
+Filename:img_5514.txt
+Okay, I will analyze the medical consultation note you provided and extract the relevant information as requested.
+
+Here's the structured analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** BMJH (Bhagwan Mahaveer Jain Hospital)
+*  **Location:** Bangalore, specifically with locations in Vasanth Nagar and Girinagar.
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kumar Shah
+*  **Credentials/Title:** Oral & Maxillofacial Surgeon, Sr. Consultant
+*  **Specialization:** Head & Neck Surgery, facial reconstruction, dental implants.
+
+**3. Patient Details:**
+
+*  **Full Name:** RUPA AICH
+*  **Patient ID or Number:** 726753
+
+**4. Consultation Date(s):**
+
+*  04-Jan-2024
+
+**5. Clinical Findings (Date-wise):**
+
+*  **04-Jan-2024:**
+  *  Supra-glottis, glottis, and sub-glottis are normal. Vocal cords are normal.
+  *  Thyroid gland is smaller in size and shows irregular margins and heterogeneous attenuation.
+  *  Polypoidal mucosal thickening in bilateral maxillary sinuses (left > right).
+  *  Visualized portions of supra and infratentorial regions appear normal.
+  *  Few tiny subsegmental sized subpleural nodular opacities measuring 1-4mm are noted in bilateral upper and right lower lobes.
+  *  A small parenchymal calcification is noted in the posterior basal segment of the left lower lobe.
+  *  Cardiomegaly with atherosclerotic aortic and coronary arterial calcifications are noted.
+  *  Few small lymph nodes are noted in pre/paratracheal, pre/subcarinal, and prevascular regions, the largest one measuring 15.0 x 8.0mm in the precarinal region. No evidence of calcifications within.
+  *  Spondylotic changes are noted in the cervical and dorsal spine.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **04-Jan-2024:**
+  *  Cardiomegaly with atherosclerotic changes.
+  *  Thyroid gland abnormality (smaller size, irregular margins, heterogeneous attenuation).
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **04-Jan-2024:**
+  *  No specific treatment plan is mentioned on the provided document. The document appears to be radiology report interpretation.
+
+**8. Ambiguous Handwriting:**
+
+*  "Aring with Compassion" written at the bottom is only partially visible.
+*  "Desophagus" instead of "Esophagus"
+*  The symbol used for 'greater than' in (left>right).
+*  'pondylotic' instead of 'Spondylotic'
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **04-Jan-2024:**
+  *  Radiology Consultation Report
+  *  CT Scan Interpretation
+  *  Thoracic and Sinus Imaging Findings
+
+
+Filename:img_5513.txt
+Here is the structured analysis of the medical consultation note, based on the provided image and OCR text:
+
+**1. Healthcare Facility:**
+  - Name: Bhagwan Mahaveer Jain Hospital
+  - Location: Vasanthnagar, Bengaluru, India
+
+**2. Consulting Physician:**
+  - Full Name: Dr. Anjan Kumar Shah
+  - Credentials/Title: (Not specified, but presumed to be a referring physician)
+  - Specialization: (Not specified)
+
+**3. Patient Details:**
+  - Full Name: Rupa Aich
+  - Patient ID or Number: 726753
+
+**4. Consultation Date(s):**
+  - 04-Jan-2024 (Study Date)
+
+**5. Clinical Findings (Date-wise):**
+
+  - **04-Jan-2024:**
+   - Partial excision of the right maxillary alveolar process is noted, associated with soft tissue graft (fat attenuation) in the right buccal/maxillary regions.
+   - Multiple surgical clips are noted on the right side of the maxilla/mandible and upper neck regions.
+   - A well-defined soft tissue mass is noted along the hard palate in the midline and to the left side, showing mildly heterogeneous enhancement with few small non-enhancing cystic/necrotic areas in contrast study. It measures about 22.0mm (TR), 11.0mm (SI) and 26.0mm (AP).
+   - Erosion of the left paramedian portion of the hard palate, extending minimally into the inferior portion of the left nasal cavity, mildly compressing on the left inferior turbinate.
+   - No evidence of extension to the soft palate posteriorly.
+   - Few mildly prominent and enhancing lymph nodes are noted in bilateral level IA, IB, and V regions; the largest measures 11.0 x 7.0mm in the left level IB and 11.0 x 6.0mm in the right IB.
+   - Some level V lymph nodes show central fatty hilum – Reactive.
+   - The rest of the visualized maxilla, mandible, and bilateral temporomandibular joints appear normal.
+   - Light submandibular gland is relatively smaller in size – post-operative changes.
+   - Left submandibular and bilateral parotid glands appear normal.
+   - Oral tongue and floor of mouth appear normal.
+   - The rest of the oro- and hypopharynx are also normal.
+   - Nasopharynx is normal. No focal mass lesion.
+   - Retropharyngeal spaces are normal.
+   - Asymmetry of bilateral internal jugular vein is noted, with the left being more prominent than the right.
+   - Bilateral carotid arteries are normal. No evidence of thrombosis.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+  - **04-Jan-2024:**
+   - Post-surgical status following partial excision of right maxillary alveolar process with soft tissue graft.
+   - Soft tissue mass along the hard palate, likely neoplastic, based on enhancement characteristics and erosion. Lymph node involvement raises concern for metastasis.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+  - **04-Jan-2024:**
+   - Diagnostic tests ordered: CT Scan of Neck and Thorax (Plain & Contrast)
+   - Necessity for histological confirmation of the soft tissue mass is strongly indicated.
+   - Further management may involve surgical resection of the mass, depending on histological findings.
+
+**8. Ambiguous Handwriting:**
+  - None apparent from the OCR text.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+  - **04-Jan-2024:**
+   - CT Scan Interpretation Report
+   - Head and Neck Imaging Assessment
+   - Post-Surgical Evaluation and Neoplasm Suspicion
+
+Filename:img_5524.txt
+Okay, I will analyze the provided image of the medical consultation note and extract the requested information.
+
+Here's the analysis of the medical note, organized as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** The Calcutta Medical Research Institute (CMRI)
+*  **Location:** 7/2, Diamond Harbour Road, Kolkata-700 027, West Bengal, India
+
+**2. Consulting Physician:**
+
+*  Based on the report, multiple doctors were involved. Here are some of them and their credentials.
+  *  **Dr. Sekhar Chakraborty**: Qualifications include BDS, MDS - Oral & Maxillofacial Surgery, FDSRCS - Fellowship in Dental Surgery. Other possible qualifications include MBBS, MS - General Surgery
+  *  **Dr. Susruta Sen:** MD, DNB in Biochemistry. Other qualifications include MBBS, PG Dip Diabetology, and PGDHHM.
+  *  **Dr. Koli Kundu:** Consultant Pathology.
+  *  **Dr. Indranil Roy:** MD, PDCC (Inf. Dis.) Consultant Microbiology. Other possible qualifications include MBBS, MD - General Medicine.
+  *  **Dr. Sumit Ghosh:** MD Consultant Pathology
+  *  **Dr. T.K.Ghosh**: MD, Director-Pathology.
+  *  **Dr. Md. Ehtesham**: MD (Path), Consultant Pathology. Other possible qualifications include Prof. Dr. Md. Ehteshamul Hoque : MBBS, MD (Nephrology)
+  *  **Dr. B.A.Savitha**: DNB (Path), Consultant Pathology
+  *  **Dr. R.N.Ghosh**: MRC Path, Vis. Consultant, Haematology
+  *  **Dr. Partha Sarathi Das**: MD Vis. Consultant Histopathology. Other possible qualifications include MS in 2003 and underwent his extensive training in Assisted Reproductive technology (ART) and Genetics at Jaslok Hospital and Research center in Mumbai, which is one of the foremost tertiary care hospital in India. He also has a sub-speciality training in Reproductive Medicine and Infertility from the prestigious University of Kiel in Germany and was also a visiting fellow in Reproductive Endocrinology and Infertility at the University of IOWA, USA.
+  *  **Dr. Subhranshu Mandal**: Registrar Microbiology. Other possible qualifications include MBBS, Fellowship in General Infectious Disease, MD Medical Microbiology and Bacteriology.
+*  **Credentials/Title:** (See above list for each doctor)
+*  **Specialization:** (See above list for each doctor)
+
+**3. Patient Details:**
+
+*  **Full Name:** RUPA AICH
+*  **Patient ID or Number:** PAN/PUK/TRN: PANA000191462 , Test Requisition No: TRQA002486943
+
+**4. Consultation Dates:**
+
+*  3/4/2015 (Sample Drawn/Collected/Received)
+*  6/4/2015 (Report Delivered)
+*  11-04-2015 (at the bottom right, likely a report generation date)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **3/4/2015:**
+  *  Clinical History: Leukoplakia
+  *  Gross Examination: Greyish brown small tissue piece measuring 1.2 cm in greatest dimension with a white patch on one side. Entire tissue processed.
+  *  Microscopically: Sections show fibromuscular & fibroadipose tissue containing minor sero-mucinous glands with overlying hyperplastic squamous epithelium showing hyperkeratosis. No evidence of malignancy / lichenoid changes seen.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **3/4/2015:**
+  *  Consistent with Oral Keratosis.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **3/4/2015:**
+  *  Specimen designated as excision biopsy of white patch on cheek.
+
+**8. Ambiguous Handwriting:**
+
+*  There is no ambiguous handwriting in the OCR extracted text.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **3/4/2015:**
+  *  Histopathology Report
+  *  Excision Biopsy Analysis
+  *  Oral Keratosis Evaluation
+  *  Pathology Consultation Report
+
+I have presented the information as accurately as possible based on the image and OCR provided.
+
+Filename:img_5532.txt
+Okay, I will analyze the provided image and extract the medical information as requested, structured by date.
+
+Here is the analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** (Not explicitly mentioned in the note)
+*  **Location:** (Not explicitly mentioned in the note)
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. S. Gupta
+*  **Credentials/Title:** (Not explicitly mentioned, but implied to be a physician)
+*  **Specialization:** (Based on the note's content, likely Surgical or Maxillofacial). I will search to see if I can find a Dr. S. Gupta with one of these specializations
+
+**3. Patient Details:**
+
+*  **Full Name:** Dr. Aria (likely a reference, as "See Dr Aria" is written)
+*  **Patient ID or Number:** (Not available)
+
+**4. Consultation Dates:**
+
+*  November 17, 2019
+*  November 22, 2019
+*  November 28, 2019 (mentioned within the text for the 17th Nov entry)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **November 17, 2019:**
+  *  Impression of Max-Naly (likely Maxillary)
+  *  Palatal Lesion
+*  **November 22, 2019:**
+  *  U/L (Unilateral) Imp (Impression) made.
+  *  Jaw relation recorded.
+  *  Shade A2. Bite recorded.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **November 17, 2019:**
+  *  Palatal lesion requiring evaluation and possible excision.
+*  **November 22, 2019:**
+  *  Assessment of jaw relation and bite.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **November 17, 2019:**
+  *  Referral to Dr. Aria.
+  *  "Wide local excision of palatal lesion tentatively on 28-11-19"
+  *  Pre-op investigation due.
+  *  Advised: PAC (Pre-Anesthesia Checkup/ Pre-Atrial Contraction - needs context)
+  *  Physician fitness.
+*  **November 22, 2019:**
+  *  Jaw relation and bite assessment completed.
+
+**8. Ambiguous Handwriting:**
+
+*  "Max-Naly Impression" - likely "Maxillary Impression".
+*  "Tentatively" - could be something else, based on handwriting.
+*  "Pre of inven-gation" - Likely "Pre-op investigation".
+*  "Alised" - Likely "Advised"
+* "Physicia Ithess" - Likely Physician fitness
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **November 17, 2019:**
+  *  Consultation Note
+  *  Surgical Planning Summary
+  *  Pre-operative Assessment
+*  **November 22, 2019:**
+  *  Prosthodontic Assessment
+  *  Jaw Relation Record
+  *  Occlusal Analysis
+
+**Important Considerations and Clarifications:**
+
+*  **Healthcare Facility and Location:** The note doesn't explicitly mention the facility's name or location. This information would typically be present on a formal consultation note.
+*  **Physician Credentials:** While the note indicates "Dr. S. Gupta," the specific credentials and specialization (e.g., MD, DDS, etc.) are not provided. Further context is needed to determine their specific role.
+*  **PAC:** The abbreviation "PAC" is used. Without further context, it could refer to:
+  *  Pre-Anesthesia Checkup: A standard assessment to ensure patient safety before anesthesia.
+  *  Premature Atrial Contractions: A type of heart arrhythmia, which seems less likely in this context but still possible.
+* **Dr. Aria:** It is not clear from the context if Dr. Aria is another consulting physician or the actual patient.
+*  **Local Anesthesia:** The note mentions "local" for the excision. This suggests the procedure may be performed under local anesthesia, but that detail is not definitively stated.
+
+To provide a more complete and accurate analysis, additional information would be needed, especially the healthcare facility details and Dr. Gupta's specialization.
+
+Filename:img_5518.txt
+Okay, I will analyze the provided image and extract the requested information.
+
+**Please note:** The image provided is a document outlining the "Terms & Conditions for Reporting" from "CARE DENTAL CLINIC'S" and "CARE ORAL PATHOLOGY SERVICES". It *does not* contain any patient-specific medical consultation notes, clinical findings, diagnoses, or treatment plans. Therefore, I cannot fulfill the majority of your request (points 4-9) as there is no such data present in the image.
+
+Here's what *can* be extracted:
+
+1. **Healthcare Facility:**
+
+  *  **Name:** CARE DENTAL CLINIC'S / CARE ORAL PATHOLOGY SERVICES
+  *  **Location:** 1st Floor, Gurukrupa Building, 44, Nagappa Street, Near Swastic Circle, Seshadripuram, Bangalore-20
+2. **Consulting Physician:**
+
+  *  **Dr. Radhika M. Bavle, MDS**
+  *  **Dr. Satyajit S. Topajiche, MDS**
+  *  **Dr. Soumya Makarla, MDS**
+3. **Patient Details:**
+
+  *  Not available from this image
+4. **Consultation Date(s):**
+
+  *  Not available from this image
+5. **Clinical Findings (Date-wise):**
+
+  *  Not available from this image
+6. **Assessment/Diagnosis (Date-wise):**
+
+  *  Not available from this image
+7. **Recommendations & Treatment Plan (Date-wise):**
+
+  *  Not available from this image
+8. **Ambiguous Handwriting:**
+
+  *  No handwriting to decipher as this is a printed document.
+9. **Suggested Professional Titles (Date-wise):**
+
+  *  Not applicable.
+
+I will now search for the names of the doctors listed to find their specializations.
+Updated Information:
+
+1. **Healthcare Facility:**
+
+  *  **Name:** CARE DENTAL CLINIC'S / CARE ORAL PATHOLOGY SERVICES
+  *  **Location:** 1st Floor, Gurukrupa Building, 44, Nagappa Street, Near Swastic Circle, Seshadripuram, Bangalore-20
+2. **Consulting Physician:**
+
+  *  **Dr. Radhika M. Bavle, MDS**: Oral & Maxillofacial Pathologist, academician, Head of Department of Oral & Maxillofacial Pathology at a Dental College and Hospital in Bangalore.
+  *  **Dr. Satyajit S. Topajiche, MDS**: Oral Pathologist, academician, Reader in the Dept of Oral and maxillofacial pathology at a private college and hospital in Bangalore.
+  *  **Dr. Soumya Makarla, MDS**: Oral Pathologist, academician, Reader in the Department of Oral & Maxillofacial Pathology in a Dental College and Hospital in Bangalore.
+3. **Patient Details:**
+
+  *  Not available from this image
+4. **Consultation Date(s):**
+
+  *  Not available from this image
+5. **Clinical Findings (Date-wise):**
+
+  *  Not available from this image
+6. **Assessment/Diagnosis (Date-wise):**
+
+  *  Not available from this image
+7. **Recommendations & Treatment Plan (Date-wise):**
+
+  *  Not available from this image
+8. **Ambiguous Handwriting:**
+
+  *  No handwriting to decipher as this is a printed document.
+9. **Suggested Professional Titles (Date-wise):**
+
+  *  Not applicable.
+
+As the provided image only contained terms and conditions for reporting and not specific patient data, most of your detailed request cannot be fulfilled. If you provide an image of actual consultation notes, I will gladly perform the analysis as requested.
+
+Filename:img_5533.txt
+Okay, I will analyze the provided medical consultation note and extract the information as requested.
+
+Here's the analysis of the medical consultation note, presented in a structured format:
+
+**1. Healthcare Facility:**
+
+*  **Name:** AMRI Medical Centre
+*  **Location:** 97A, Southern Avenue, Kolkata - 700 029
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sekhar Chakrabarty
+*  **Credentials/Title:** B.D.S., M.D.S., F.D.S.R.C.S., Eng, Consultant Oral & Maxillo-Facial Surgeon, Specialist in Oral & Maxillofacial Oncology
+*  **Specialization:** Oral & Maxillo-Facial Surgery and Oral & Maxillofacial Oncology
+
+**3. Patient Details:**
+
+*  **Full Name:** Rupa Aich
+*  **Patient ID or Number:** Reg. No. (Not provided)
+
+**4. Consultation Date(s):**
+
+*  April 11, 2018
+
+**5. Clinical Findings (Date-wise):**
+
+*  **Date: April 11, 2018**
+  *  Post-operative review
+  *  A linear white patch is noted in the buccal sulcus anteriorly.
+  *  Observed that the size of which patch increases.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **Date: April 11, 2018**
+  *  *Possible diagnosis based on findings:* Leukoplakia or other potentially malignant lesion of the oral mucosa, based on the presence of a white patch in the buccal sulcus.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **Date: April 11, 2018**
+  *  Dr. check replaced to radial forearm. (Unclear, possibly related to a previous procedure or implant check)
+  *  Doubt well on 2015 April.
+  *  Advised: Daily or weekly self-inspection.
+  *  Laser ablation of the white patch is advisable in case the patch increases in size.
+  *  Necessity for histological confirmation: Implied if laser ablation is performed.
+  *  Logistical Details: Not specified, but if laser ablation is chosen, likely to be an outpatient procedure, potentially under local anesthesia.
+
+**8. Ambiguous Handwriting:**
+
+*  "Porr-op reven" - Interpreted as "Post-op review," but uncertain.
+*  "Dr. check repben o radial forearm" - Highly ambiguous. Possible interpretation: "Review check replacing of radial forearm implant" - This is speculative.
+*  "Dong well" - Could be "Doing well," or something else.
+*  "Dails or weekly belf" - Could be "Daily or weekly self"
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **Date: April 11, 2018**
+  1. Post-Operative Review & Assessment
+  2. Oral Mucosal Lesion Evaluation
+  3. Consultation Note: Leukoplakia Suspicion
+  4. Dental Laser Ablation Plan
+
+Filename:img_5520.txt
+Okay, I will analyze the provided medical consultation note and extract the requested information.
+
+Here's an analysis of the medical note, structured as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital (Now known as Manipal Hospital)
+*  **Location:** Millers Road, Bengaluru (Bangalore), India.
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** Likely Professor (Prof.) or Doctor (Dr.) - possibly with BDS, MDS, FFDRCS qualifications, depending on the specific Dr. Sanjiv Nair.
+*  **Specialization:** Oral and Maxillofacial Surgeon.
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. RUPA AICH
+*  **Patient ID/Number:**
+  *  PRN: 242124
+  *  Visit No.: IP1
+  *  Admission No.: 73560
+
+**4. Consultation Dates:**
+
+*  27/11/2019 (Admission Date)
+*  29/11/2019 (Discharge Date)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **27/11/2019 (Admission):** No specific clinical findings are detailed on this document for the admission date.
+*  **29/11/2019 (Discharge):**
+  *  Age/Gender: 66 Years 2 Months 14 Days / Female
+  *  Discharge Mode: Normal
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  The document does not explicitly state a diagnosis. However, the patient was referred to the Oral & Maxillofacial department, suggesting a condition related to the oral cavity, jaws, or face.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **29/11/2019 (Discharge):**
+  *  Follow-up: Review after 3 days in Maxillofacial OPD with prior appointment. Contact number provided: 9620008637.
+
+**8. Ambiguous Handwriting:**
+
+*  "Dr. NOATH LABAN.S" - This is the name of the person who explained the discharge summary to the patient, and it is difficult to decipher, this could be a different variation of Dr. Nair's name.
+*  "UNDERST-oscopy"- It is difficult to understand what the word is here.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **27/11/2019 (Admission):**
+  *  Admission Note
+  *  Patient Registration Summary
+  *  Inpatient Assessment
+*  **29/11/2019 (Discharge):**
+  *  Discharge Summary
+  *  Maxillofacial Outpatient Referral
+  *  Post-operative Review Plan
+
+
+Filename:img_5529.txt
+Okay, I will analyze the provided document and extract the information as requested.
+
+Here's the analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital (Bengaluru) Pvt. Ltd.
+*  **Location:** #71/1, Millers Road, Opp. St. Anne's College, Bengaluru - 560052, India
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sharitha Naganna
+*  **Credentials/Title:** Jr. Consultant Pathologist, MD Pathology
+*  **Specialization:** Pathology
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. RUPA AICH
+*  **Patient ID or Number:** 242124, OP-4
+
+**4. Consultation Date(s):**
+
+*  16/11/2019 (Collected, Received, and Reported On)
+*  22/07/2019 (Dated VHBPL/LAB/F/6/1.0/)
+*  22/11/2019 (Printed On)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **16/11/2019:** Haematology report indicates "Mild eosinophilia."
+*The specific values for various hematological parameters are present in the report, including Prothrombin Time (PT), Complete Blood Count (CBC) with differential counts. Some values are outside the biological reference interval such as I.N.R, Haemoglobin, Haematocrit, RDW-CV.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **16/11/2019:** Mild eosinophilia is indicated in the report. Further assessment might be required based on the complete clinical picture.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **16/11/2019:** No specific treatment plan is mentioned in the provided document. The report presents the results of a hematology test, which would likely inform further diagnostic or treatment decisions made by the primary care physician or specialist.
+
+**8. Ambiguous Handwriting:**
+
+*  The handwriting is generally legible in the OCR. The signature of Dr. Sharitha Naganna is present.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **For 16/11/2019:**
+  *  Hematology Report
+  *  Laboratory Analysis Report
+  *  Complete Blood Count Analysis
+* **For 22/07/2019:**
+  * VHBPL/LAB/F/6/1.0 Report.
+*  **For 22/11/2019:**
+  *  Print Date Confirmation
+  *  Record Verification
+
+
+Filename:img_5515.txt
+Okay, I will analyze the medical consultation note you provided and extract the requested information.
+
+Here is the analyzed information from the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Not explicitly mentioned on the document.
+*  **Location:** Not explicitly mentioned on the document.
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Praveenkumar P Choudri
+*  **Credentials/Title:** MDRD, DNBRD, Consultant Radiologist
+*  **Specialization:** Radiology
+
+**3. Patient Details:**
+
+*  **Full Name:** Rupa Aich
+*  **Patient ID or Number:** 726753
+
+**4. Consultation Date(s):**
+
+*  January 4, 2024
+
+**5. Clinical Findings (Date-wise):**
+
+*  **January 4, 2024:**
+  *  Previous history of verrucous lesion of the right palate with post-excision, maxillectomy, and radical neck dissection on the right side.
+  *  Now presents with recurrent invasive squamous cell carcinoma of the palate.
+  *  Partial excision of the right maxillary alveolar process with soft tissue graft in the right buccal/maxillary regions. Multiple surgical clips are present in the right side of the maxilla/mandible and upper neck regions.
+  *  Well-defined heterogeneously enhancing soft tissue mass with small cystic/necrotic areas along the hard palate in the midline and to the left side. It is eroding the left paramedian portion of the hard palate and extending minimally into the inferior portion of the left nasal cavity, mildly compressing on the left inferior turbinate. No evidence of extension to the soft palate posteriorly.
+  *  Few mildly prominent and enhancing lymph nodes in bilateral level IA, IB, and V regions.
+  *  Few tiny subsegmental sized subpleural nodular opacities in bilateral upper and right lower lobes of the lungs.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **January 4, 2024:**
+  *  Recurrent malignant mass is suspected based on the findings.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **January 4, 2024:**
+  *  Clinical correlation suggested
+  *  Nature of lung opacities needs follow up
+
+**8. Ambiguous Handwriting:**
+
+*  "Sugg:" abbreviation is used to denote "Suggesting" or "Suggestion".
+*  "? Nature (Needs follow up)" - The exact nature being questioned regarding the lung opacities is unclear without further context.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **January 4, 2024:**
+  *  Radiology Consultation Report
+  *  Recurrent Palatal Carcinoma Imaging Review
+  *  Post-Surgical Maxillectomy Assessment
+
+Filename:img_5509.txt
+Okay, I will analyze the provided image and extract the medical consultation note information as requested.
+
+Here's the analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Aster CMI Hospital
+*  **Location:** \#43/2, New Airport Road, NH.7, Sahakara Nagar, Hebbal, Bangalore, Karnataka 560092, India.
+
+**2. Consulting Physician (Radiologist):**
+
+*  **Full Name:** Dr. Jatin VK
+*  **Credentials/Title:** MD PDF (Diag. HPB & GI Imaging) EDIR, DICRI, Senior Specialist Radiologist
+*  **Specialization:** Radiology, specifically diagnostic Hepatobiliary and Gastrointestinal Imaging.
+
+**3. Consulting Physician (Nuclear Medicine):**
+
+*  **Full Name:** Dr. Mythri Shankar
+*  **Credentials/Title:** MD(USA), FACNM, FACNC, IBLM. Lead Consultant- Nuclear Medicine. Board Certified Lifestyle Medicine Physician.
+*  **Specialization:** Nuclear Medicine and Lifestyle Medicine.
+
+**4. Patient Details:**
+
+*  **Full Name:** Rupa Aich (Additional handwritten note suggests "Mrs. Rupa")
+*  **Patient ID or Number:** 70321945
+
+**5. Consultation Date(s):**
+
+*  27-02-2025
+*  28-02-2025
+
+**6. Clinical Findings (Date-wise):**
+
+*  **27-02-2025:** CT, PT Scan
+*  **28-02-2025:**
+  *  Case of Carcinoma Palate (Status post right palate lesion excision & leukoplakia excision on left cheek in 2015). Excision of venous lesion right palate on 28-11-2024, wide local excision and neck dissection and radial forearm free FLAP on 10-1-2024.
+  *  Compared to prior PET CT dated 8/1/24, present PET CT shows:
+    *  No abnormal FDG uptake/focal mass lesion in the surgical bed in the palate region.
+    *  Surrounding soft tissue inflammatory enhancement and subtle FDG uptake as described.
+    *  Interval resolution of previously noted FDG avid well-defined soft tissue density mass noted along the hard palate in the midline and to the left side.
+    *  Interval resolution of the inflammatory changes in the left paramedian portion of the hard palate which was abutting the left nasal cavity and compressing on the left inferior nasal turbinate.
+    *  New onset- focal FDG uptake (~1 x 1cm) in the left mandible in the region of the canine/premolar tooth with no corresponding CT lesion - ? Significance - For close follow-up imaging.
+    *  Interval metabolic resolution and size reduction in cervical and submandibular lymphadenopathy.
+    *  New onset- FDG avid subcarinal node and posterior mediastinal node at the same level- reactive.
+    *  No other new distant metastatic lesions.
+
+**7. Assessment/Diagnosis (Date-wise):**
+
+*  **28-02-2025:** Carcinoma Palate. The report indicates status post-excision and notes some areas of resolution and new findings warranting further investigation (focal FDG uptake in the mandible).
+
+**8. Recommendations & Treatment Plan (Date-wise):**
+
+*  **28-02-2025:**
+  *  Close follow-up imaging is recommended to investigate the new onset focal FDG uptake in the left mandible. The significance of this finding is currently uncertain.
+
+**9. Ambiguous Handwriting:**
+
+*  None apparent in the provided cropped text of the report.
+
+**10. Suggested Professional Titles (Date-wise):**
+
+*  **27-02-2025:** Imaging Study Order
+*  **28-02-2025:**
+  *  Radiology Interpretation Report
+  *  PET/CT Follow-up Assessment
+  *  Oncology Imaging Summary
+  *  Carcinoma Palate Evaluation
+
+Filename:img_5506.txt
+Here's the analysis of the provided medical document, structured as requested:
+
+Here's an analysis of the medical note, organized by the requested categories:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Aster CMI Hospital
+*  **Location:** #43/2, New Airport Road, NH.7, Sahakara Nagar, Hebbal, Bangalore, Karnataka 560092, India.
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kuamr Shah
+*  **Credentials/Title:** Based on search results, Dr. Shah is an Oral & Maxillofacial Surgeon. He also has degrees including BDS, MDS, FDS RCS, FFD RCS, FICOI.
+*  **Specialization:** Oral and Maxillofacial Surgery, with a focus on Head & Neck Surgery and facial reconstruction.
+
+**3. Patient Details:**
+
+*  **Full Name:** Rupa Aich
+*  **Patient ID/Number:** 70321945
+*  **Age/Gender:** 71 years, 27 days / Female
+
+**4. Consultation Date(s):**
+
+*  27-02-2025
+*  28-02-2025
+
+**5. Clinical Findings (Date-wise):**
+
+*  **27-02-2025:**
+  *  "Study" date related to the CT/PT scan.
+*  **28-02-2025:**
+  *  Report date for PET CT Scan.
+  *  **Indication:** History of Ca Palate (status post right palate lesion excision & leukoplakia excision on the left cheek in 2015), excision of venous lesion right palate on 28-11-2024, wide local excision and neck dissection and radial forearm free FLAP on 10-1-2024 – Reassessment.
+  *  **Observations:**
+    *  Physiological FDG uptake is seen in the brain, oropharynx, gastrointestinal tract, heart, bowel, with normal tracer excretion in the kidneys and urinary bladder.
+    *  Brain parenchyma shows age-related neuroparenchymal atrophic changes and chronic small vessel ischemic changes in bilateral periventricular and frontoparietal lobes. No focal lesions are noted in the neuroparenchyma; paranasal sinuses and orbits appear normal.
+    *  Partial excision of the right maxillary alveolar process is noted associated with soft tissue graft (fat density) in the right buccal/maxillary regions. Multiple surgical clips are noted in the right side of the maxilla/mandible and upper neck regions. No abnormal FDG uptake/focal mass lesion. Surrounding soft tissue inflammatory enhancement and subtle FDG uptake noted.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **28-02-2025:** History of Ca Palate, status post multiple excisions and reconstruction, age-related brain changes. The PET CT scan is for reassessment.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **27-02-2025:** CT,PT Study.
+*  **28-02-2025:**
+  *  The PET CT scan report suggests monitoring of previously treated cancer of the palate and assessment of the soft tissue graft. No immediate interventions are explicitly recommended in the report.
+
+**8. Ambiguous Handwriting:**
+
+*  Oropharaynx (likely oropharynx)
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **27-02-2025:** Imaging Study Record, CT/PT Scan Order
+*  **28-02-2025:** PET CT Scan Report, Oncologic Imaging Assessment, Reassessment Imaging Summary
+
+Filename:img_5523.txt
+Okay, I will analyze the medical consultation note and extract the requested information.
+
+Here's the analysis of the medical consultation note, structured as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** The Calcutta Medical Research Institute (CMRI)
+*  **Location:** 7/2, Diamond Harbour Road, Kolkata-700 027
+
+**2. Consulting Physician(s):**
+
+*  **Dr. Sekhar Chakraborty:** Oral And MaxilloFacial Surgeon, BDS, MDS - Oral & Maxillofacial Surgery, FDSRCS - Fellowship in Dental Surgery
+*  **Dr. Anupam Golash:** Plastic & Hand Surgeon, MBBS, DNB, MS(General Surgery), FRCSED, FRCS(Plastic Surgery).
+*  **Dr. Lina Chatterjee:** MBBS, MD, Diploma - Child Health
+
+**3. Patient Details:**
+
+*  **Patient ID:** PANA000191462
+
+**4. Consultation Date(s):**
+
+*  April 9, 2015
+*  April 17, 2015
+
+**5. Clinical Findings (Date-wise):**
+
+*  **April 9, 2015:** No explicit clinical findings are written on this date.
+*  **April 17, 2015:** No explicit clinical findings are written on this date.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **April 9, 2015:** The prescriptions suggest the patient might be experiencing symptoms related to hyperglycemia or diabetes and a possible fungal infection in the mouth (oral candidiasis).
+*  **April 17, 2015:** No explicit diagnosis is written on this date.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **April 9, 2015:**
+  *  **Medications:**
+    *  Tab Esam 2.5mg 1 tab once daily after breakfast.
+    *  Tab Thyronorm 100mcg 1 tab once daily before breakfast.
+    *  Tab Glyciphage 500mg 1/2 tab daily before breakfast.
+    *  Syp Unienzyme / Carmozyme 2 tsf once daily after meal.
+    *  Tab Augmentin 625mg 1 tab thrice daily after meal for 5 days.
+    *  Cap Raciper D 1 cap daily before breakfast for 7 days.
+    *  Tab Parasafe 650mg 1 tab thrice daily after meal for 5 days.
+    *  Candid mouth paint apply thrice daily after meal on dorsum of tongue.
+    *  Clohex Plus mouth wash add 10ml of mouth wash in cup of luke warm water and rinse 5/6 times daily.
+  *  **Instructions:** Brush twice daily; soft diet as directed by dietician.
+  *  **Follow-up:** Follow up on 17.04.2015 OPD at 1PM with Dr. Sekhar Chakraborty & with Dr. Anupam Golash in speciality clinic prior taking appointment. Follow up with Dr. Lina Chatterjee after 2 weeks with FBS & PPBS blood reports.
+*  **April 17, 2015:**
+
+  *  Follow up as an outpatient with Dr. Sekhar Chakraborty and Dr. Anupam Golash.
+  *  Follow up with Dr. Lina Chatterjee after 2 weeks for FBS & PPBS blood reports.
+  *  Indication for diet as directed by dietician
+
+**8. Ambiguous Handwriting:**
+
+*  The signature of MO/Registrar is difficult to decipher.
+*  The doctor’s signature under the title ‘Consultant’s Signature’ is illegible.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **April 9, 2015:**
+  *  Outpatient Consultation Note
+  *  Medication Prescription and Management Plan
+  *  Diabetic and Oral Candidiasis Treatment Plan
+*  **April 17, 2015:**
+  *  Follow-up Consultation Summary
+  *  Post-Assessment Review
+  *  Specialty Clinic Review
+
+Filename:img_5517.txt
+Okay, I will analyze the provided image and extract the requested information as accurately as possible.
+
+Here's the structured analysis of the provided medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** CARE ORAL PATHOLOGY SERVICE
+*  **Location:** 1st Floor, Gurukrupa Building, 44, Nagappa Street, Near Swastic Circle, Soshadripuram, Bangalore
+
+**2. Consulting Physician(s):**
+
+*  **Dr. Radhika M. Bavle:**
+  *  **Credentials:** MDS (Master of Dental Surgery)
+  *  **Specialization:** Oral & Maxillofacial Pathology
+*  **Dr. Satyajit S. Topajiche:**
+  *  **Credentials:** MDS (Master of Dental Surgery)
+  *  **Specialization:** Oral Pathology
+*  **Dr. Soumya Mal:**
+  *  **Credentials:** Not specified in the document. Other source says MBBS & M.D.(Pathology)
+
+**3. Patient Details:**
+
+*  Patient's full name and patient ID are not available in the document.
+
+**4. Consultation Date(s):**
+
+*  The consultation date is not explicitly mentioned on the document. However, since this is a pathology report, the date refers to when the sample was analyzed.
+
+**5. Clinical Findings (Date-wise):**
+
+*  **Date:** Not specified
+  *  **Parameters & Findings (Based on Aneroth's Multi-factorial grading system):**
+    *  Degree of Keratinization: Moderately keratinized (20-50% of the cells)
+    *  Nuclear Pleomorphism: Little nuclear polymorphism (>75% mature cells)
+    *  Mitosis (HPF - High Power Field): 2-3 mitoses per field
+    *  Pattern of Invasion: Type 3
+    *  Stage/Level of Invasion: Distinct Invasion, but involving lamina propria only.
+    *  Lympho-plasmacytic Infiltration: Slight
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **Date:** Not specified
+  *  **Grade:** Grade II (11-15) based on the total score. The specific diagnosis (e.g., specific type of lesion or carcinoma) is not explicitly stated, but the grading suggests a neoplastic process.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  The document does not contain treatment plans or recommendations. It is a pathology report, which informs clinical decision-making.
+
+**8. Ambiguous Handwriting:**
+
+*  N/A as the document is a pathology report with typed text.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  Given the content, the following titles would be appropriate:
+  *  Oral Pathology Report
+  *  Histopathological Assessment
+  *  Aneroth's Grading System Analysis
+  *  Pathology Consultation Report
+
+**Important Considerations:**
+
+*  **Lack of Patient Identifiers:** The absence of the patient's name and ID is a significant issue. A pathology report should always include these details for accurate record-keeping and patient safety.
+*  **Missing Clinical Context:** This report provides histological findings, but lacks the clinical context. A complete medical record would include the referring clinician's notes, reason for biopsy, and relevant patient history.
+*  **Grading System:** The report uses the "Aneroth's Multi-factorial grading system." Clarification on what this grading system is used for is beneficial.
+
+**Disclaimer:** As an AI, I am unable to provide medical diagnoses. This analysis is for informational purposes only and should not substitute professional medical advice. A qualified healthcare professional should interpret the pathology report in conjunction with the patient's clinical information.
+
+Filename:img_5525.txt
+Okay, I will analyze the provided histopathology/cytopathology report.
+
+Here's a breakdown of the information extracted from the provided histopathology/cytopathology report:
+
+**1. Healthcare Facility:**
+
+*  **Name:** R.S. TRIBEDI & ROY DIAGNOSTIC LABORATORY
+*  **Location:** 93, Park Street, Kolkata-700 016
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. S. Chakraborty
+*  **Credentials/Title:** Not specified in the document but likely to be a pathologist based on the report type.
+*  **Specialization:** Pathology
+
+**3. Patient Details:**
+
+*  **Full Name:** Rupa Aich
+
+**4. Consultation Date(s):**
+
+*  2015-04-22 (Date of Receipt & Date of Report)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **2015-04-22:**
+  *  The biopsy from the cheek shows hyperkeratosis and acanthosis of the lining stratified squamous epithelium.
+  *  Beneath the lining epithelium are bundles of muscle fibres, fibrocollagenous tissue, and a minor salivary gland.
+  *  No evidence of dysplasia or malignancy.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **2015-04-22:**
+  *  Keratosis, cheek.
+  *  No dysplasia.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **2015-04-22:**
+  *  Histopathology slide and block (No. SS1091/15 (RA) for opinion - Excised white patch in cheek.
+
+**8. Ambiguous Handwriting:**
+
+*  None apparent in this document.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **2015-04-22:**
+  *  Histopathology Report
+  *  Cytopathology Assessment
+  *  Pathology Consultation Report
+
+
+Filename:img_5528.txt
+Okay, I will analyze the provided medical consultation note image and extract the requested information in a clear and organized manner.
+
+Here's the breakdown of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital
+*  **Location:** Bengaluru
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** KMC (Karnataka Medical Council)
+*  **Specialization:** Oral and Maxillofacial Surgeon (based on search results indicating his specialization and role as Head of Department of Oral and Maxillofacial Surgery)
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. Rupa Aich
+*  **Patient ID or Number:** 242124
+
+**4. Consultation Date(s):**
+
+*  November 29, 2019
+
+**5. Clinical Findings (Date-wise):**
+
+*  **November 29, 2019:** No specific clinical findings are mentioned in the prescription.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **November 29, 2019:** Based on the medication prescribed, potential diagnoses could include:
+  *  Bacterial infection (Cefuroxime)
+  *  Acid peptic disease (Pantoprazole)
+  *  Oral hygiene maintenance (Chlorhexidine)
+  *  Hypothyroidism (Thyroxine Sodium)
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **November 29, 2019:**
+  *  **Medications Prescribed:**
+    *  Cefuroxime 250mg (Ceftum 250mg Tab): 1-0-1 (twice daily) for 5 days, oral.
+    *  Pantoprazole 40mg (Pan 40 mg Tab): 1-0-0 (once daily) for 5 days, oral, before food.
+    *  Tab. Imol: 1-0-1 (twice daily) for 5 days, oral.
+    *  Chlorhexidine 0.2% (Clohex Oral Rinse 150ml): 1-1-1-1 (four times daily) for 5 days, oral rinse.
+    *  Tab. Esam 1.25 mg: 1-0-0 (once daily), oral.
+    *  Thyroxine Sodium 100mcg (Eltroxin 100mcg Tab): 1-0-0 (once daily), oral.
+
+**8. Ambiguous Handwriting:**
+
+*  Below the prescription table, there is some handwritten text that is difficult to decipher. Possible interpretations include phrases related to "side" or additional notes on the medications. "I side) in" and other words under this seem to be illegible due to handwriting. Also, the signature of the doctor is unreadable
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **November 29, 2019:**
+  *  Prescription Note
+  *  Medication Management Plan
+  *  Outpatient Prescription
+
+
+Filename:img_5519.txt
+Okay, I will analyze the provided medical note and extract the requested information.
+
+Here's the analysis of the medical note, organized as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital
+*  **Location:** Bengaluru, India; Office & Hospital: #71/1, Millers Road, Opp. St. Anne's College, Bengaluru - 560 052
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** Oral & Maxillofacial Surgeon; Professor and Head of Department, Oral and Maxillofacial Surgery
+*  **Specialization:** Oral & Maxillofacial Surgery
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. Rupa Aich
+*  **Patient ID/Number:**
+  *  PRN: 242124
+  *  Visit No.: IP1
+  *  Admission No.: 73560
+
+**4. Consultation Dates:**
+
+*  27/11/2019 (Admission Date)
+*  28/11/2019 (Procedure Date)
+*  29/11/2019 (Discharge Date)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **27/11/2019 (Admission):**
+  *  Patient presented with complaints of maxillary hypoplasia.
+  *  Past History: Hypertension, Hypothyroidism
+  *  Temperature: 98.2° F, Pulse Rate: 97/Min, R.R.: 20/Min, B.P.: 130/80 mm of Hg, SpO2: 96% at RA
+  *  CNS: Conscious and oriented
+  *  CVS: S1S2+
+  *  P/A: Soft, BS+
+  *  RS: Bilateral NVBS+
+*  **28/11/2019 (Procedure):**
+  *  Excision of verrucous lesion - right palate under GA
+*  **29/11/2019 (Discharge):**
+  *  Patient symptomatically better.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **27/11/2019:** Maxillary hypoplasia.
+*  **29/11/2019:** Verrucous lesion - Right Palate
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **28/11/2019:**
+  *  Surgical procedure: Excision of verrucous lesion – right palate.
+  *  Anesthesia: General Anesthesia (GA)
+  *  Post-operative care: IV fluids, IV antibiotics (Inj. Cefazolin 1.5 gm), IV analgesics, IV antacids, IV anti-emetics, and other supportive measures.
+*  **29/11/2019 (Discharge Advice):**
+  *  Medication:
+    *  Cefuroxime 250mg (Ceftum 250mg Tab): 1-0-1, 5 days, Oral
+    *  Pantoprazole 40mg (Pan 40 mg Tab): 1-0-0, 5 days, Oral (Before Food)
+    *  (Tab. Imol): 1-0-1, 5 days, Oral
+    *  Chlorhexidine 0.2% (Clohex Oral Rinse 150ml): 1-1-1-1, 5 days, Oral
+    *  (Tab. Esam 1.25 mg): 1-0-0, Daily, Oral
+    *  Thyroxine Sodium 100mcg (Eltroxin 100mcg Tab): 1-0-0, Daily, Oral
+  *  Advice obturator in place.
+
+**8. Ambiguous Handwriting:**
+
+*  `(TAB. IMOL)`
+*  `ESAM 1.25 MG`
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **27/11/2019 (Admission):**
+  *  Admission Assessment Report
+  *  Initial Consultation Summary
+  *  Pre-operative Evaluation
+  *  Maxillary Hypoplasia Assessment
+*  **28/11/2019 (Procedure):**
+  *  Surgical Procedure Note
+  *  Verrucous Lesion Excision Report
+  *  Post-operative Management Plan
+  *  Operative Summary
+*  **29/11/2019 (Discharge):**
+  *  Discharge Summary
+  *  Post-operative Care Instructions
+  *  Medication Reconciliation Report
+  *  Patient Discharge Note
+
+Filename:img_5507.txt
+Okay, I will analyze the medical consultation note from the image and extract the requested information in a structured, date-wise manner.
+
+**1. Healthcare Facility:**
+
+*  **Name:** Aster CMI Hospital
+*  **Location:** #43/2, New Airport Road, NH. 7, Sahakara Nagar, Hebbal, Bangalore, Karnataka 560092, India
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kuamr Shah
+*  **Credentials/Title:** (Not explicitly stated, but implied to be a medical doctor - "Dr.")
+*  **Specialization:** (Not explicitly stated in the document)
+
+**3. Patient Details:**
+
+*  **Full Name:** Rupa Aich
+*  **Patient ID or Number:** 70321945
+
+**4. Consultation Dates:**
+
+*  2025-02-27
+*  2025-02-28
+
+**5. Clinical Findings (Date-wise):**
+
+*  **2025-02-27 (CT,PT Study):** (No specific findings are listed under this date)
+*  **2025-02-28 (Report):**
+  *  Interval resolution of a previously noted FDG avid well-defined soft tissue density mass along the hard palate in the midline and to the left side, previously measuring approximately 4.0x2.0x2.6cm (AP x TR x CC) with SUV max of 10.45.
+  *  Interval resolution of the inflammatory changes in the left paramedian portion of the hard palate which was abutting the left nasal cavity and compressing on the left inferior nasal turbinate.
+  *  Focal FDG uptake (~1 x 1cm) noted in the left mandible in the region of the canine/premolar tooth with no corresponding CT lesion with SUV max of 14.7.
+  *  Few sub-cm prominent and enhancing non-FDG avid lymph nodes are seen at right level Ib (8 x 7mm), right level III ~11x7mm (reactive). No other significant FDG avid cervical lymphadenopathy.
+  *  Right submandibular gland is small in size-post-operative changes.
+  *  Left submandibular and bilateral parotid glands appear normal.
+  *  Nasopharynx is normal.
+  *  Parapharyngeal spaces are normal.
+  *  Oro and hypopharynx are also normal.
+  *  Supra-glottis, glottis and sub-glottis are normal.
+  *  Thyroid is atrophic.
+  *  **Chest:**
+    *  Stable ~3mm non FDG avid nodule in the anterior segment of left upper lobe (HRCT #35), ~3mm right transverse parafissural nodule (HRCT 75).
+    *  Few thin-walled parenchymal cysts are seen in the right upper and left lower lobe.
+    *  Rest of the lungs show normal parenchymal attenuations. No FDG avid nodules or focal mass lesion.
+    *  No evidence of pleural effusion.
+    *  Cardia appears mildly enlarged in size with coronary artery calcifications.
+    *  Esophagus appears normal.
+    *  New onset- FDG avid subcarinal node ~17 x 10mm and posterior mediastinal node ~16 x 11mm with SUV max of 6.8 at the same level. Few non FDG avid/ minimal FDG avid pretracheal, paratracheal, AP window nodes noted.
+  *  **Abdomen & Pelvis:**
+    *  Liver: Normal in size, shape, outlines and parenchymal attenuation. No evidence of intrahepatic biliary radicular dilatation. Few tiny hepatic cysts noted in segment 4a and 8 measuring ~2-3mm. No FDG avid focal hypodense lesion.
+    *  Gall bladder: is adequately distended. No calculus. Wall appears normal. Normal peri-cholecystic area.
+    *  Spleen: Spleen is normal in size, shape and attenuation values. Post contrast sections show no significant point of note. Splenunculus measuring 14mm noted in the inferomedial aspect of spleen.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **2025-02-27:** (Likely related to CT scan scheduling, no diagnosis explicitly listed)
+*  **2025-02-28:**
+  *  Post-operative changes in the right submandibular gland.
+  *  Atrophic thyroid.
+  *  Coronary artery calcifications.
+  *  Splenunculus.
+  *  New onset FDG avid subcarinal and posterior mediastinal nodes
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **2025-02-27:** CT,PT scan was scheduled.
+*  **2025-02-28:** No specific recommendations or treatment plan mentioned on this date other than the findings in the report. Further management might be based on these findings.
+
+**8. Ambiguous Handwriting:**
+
+*  There are no ambiguities in the provided OCR.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **2025-02-27:**
+  *  CT Scan Scheduling Note
+  *  Radiology Order Confirmation
+  *  Imaging Study Request
+
+*  **2025-02-28:**
+  *  Radiology Report
+  *  Comprehensive Imaging Findings
+  *  Post-operative and Incidental Findings Report
+  *  CT Scan Interpretation
+
+
+Filename:img_5534.txt
+Here's a breakdown of the medical consultation note, structured and organized as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** LIFE LINE DIAGNOSTIC CENTRE CUM NURSING HOME
+*  **Location:** 4A, WOOD STREET, KOL-700 016 (Near Vardhan Market, Camac St.), Kolkata
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sekhar Chakraborty
+*  **Credentials/Title:** BDS, MDS, FDS RCS, Eng., CONSULTANT ORAL & MAXILLOFACIAL SURGEON
+*  **Specialization:** Oral & Maxillo-Facial Oncology, Traumatology, Temporomandibular Joint Surgery & Salivary Gland Diseases
+
+**3. Patient Details:**
+
+*  **Full Name:** Ms. Rupa Dich
+
+**4. Consultation Date(s):**
+
+*  28/03/12
+
+**5. Clinical Findings (Date-wise):**
+
+*  **28/03/12:**
+  *  **ME (Medical Examination) Rr cheek absolutely OK.**
+  *  **Left cheek:** Erythematous, Scarred
+  *  **DD (Differential Diagnosis):** Dysplastic changes of left cheek mucosa
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **28/03/12:**
+  *  Dysplastic changes in the left cheek mucosa are suspected, based on clinical findings of erythema and scarring.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **28/03/12:**
+  *  "le tenormte ointment to apply locally"
+
+**8. Additional Findings**
+
+*  **Post-op review**
+*  **Reukoplakia Rr. Cheek**
+*  **pented in 2015**
+*  **3 Excision**
+*  **by Radial forearm**
+*  **flap**
+
+**9. Ambiguous Handwriting:**
+
+*  "absolubl" - Likely intended to be "absolutely."
+*  "le tenormte ontent" - Could be "Betamethasone ointment" but is difficult to decipher completely.
+*  "apps locals" - likely intended to be "apply locally"
+*  "Reukoplakia" - Likely intended to be "Leukoplakia"
+
+**10. Suggested Professional Titles (Date-wise):**
+
+*  **28/03/12:**
+  *  Clinical Assessment Report
+  *  Mucosal Dysplasia Evaluation
+  *  Dermatological Consultation Summary
+
+Filename:img_5510.txt
+Okay, I will analyze the provided discharge summary and extract the requested information.
+
+Here is the analyzed information from the discharge summary, structured as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Bhagwan Mahaveer Jain Hospital
+*  **Location:** Vasanthnagar, Bengaluru, India (#17, Millers Road, Vasanthnagar, Bengaluru - 560052)
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** Not explicitly stated, but likely an Oral and Maxillofacial Surgeon
+*  **Specialization:** Oral & Maxillo Facial Surgery
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. Rupa Aich
+*  **Patient ID/Number:** 726753
+
+**4. Consultation Dates:**
+
+*  09/01/2024 (Admission Date & Time: 01:50 PM)
+*  17/01/2024 (Discharge Date & Time: 10:30 AM)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **09/01/2024 (Admission):**
+  *  Chief Complaints: Complaints of burning sensation in the palate region since 14 days.
+  *  History of Present Illness: History of bilateral cheek region with excision of lesion reconstruction with radial forearm flap and buccal pad in 2015. Previous palatal verrucous lesion excision in 2019.
+  *  Past History: Known case of hypertension for 10 years on Tab. Amlong. Known case of hypothyroidism on Tab. Thyronorm.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **09/01/2024 (Admission):**
+  *  Carcinoma of the Palate
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **09/01/2024 (Admission):**
+  *  Surgical Procedure Suggested: Wide local excision + Neck dissection + Radial forearm free flap
+
+**8. Ambiguous Handwriting:**
+
+*  "a 034 krishvi gavaushi gear rdkadubeesanahalli" is unclear, likely part of the patient's address.
+*  "F/B" in "F/B Palatal verucous lesion excision in 2019" is unclear, likely "Followed by" or "For".
+*  "hismer" in "VALID ONLY FOR DISCHARGE SUMMARY - PLEASE NOTE: In case there are any corrections to be made in the Discharge Summary, it is the responsibility of the patient or hismer authorised" is unclear and probably "his/her".
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **09/01/2024 (Admission):**
+  *  Admission Assessment
+  *  Pre-operative Surgical Planning
+  *  Oncology Consultation Summary
+
+*  **17/01/2024 (Discharge):**
+  *  Discharge Summary
+  *  Post-operative Report
+  *  Surgical Outcome Summary
+
+
+Filename:img_5511.txt
+Okay, I will analyze the provided medical consultation note and extract the requested information.
+
+Here's a detailed analysis of the medical note, organized as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** (Not explicitly mentioned in the document but can be inferred from the consultant's details below) Bhagwan Mahaveer Jain Hospital
+*  **Location:** (Not explicitly mentioned in the document but can be inferred from the consultant's details below) Bangalore, India
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** Possibly BDS, MDS, FFDRCS, DNB
+*  **Specialization:** Oral and Maxillofacial Surgeon
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. Rupa Aich
+*  **Patient ID:** 726753
+*  **In-Patient No:** 235162
+
+**4. Consultation Dates:**
+
+*  January 10, 2024
+*  January 11, 2024
+*  January 12, 2024
+*  January 15, 2024
+
+**5. Clinical Findings (Date-wise):**
+
+*  **Prior to January 10, 2024 (Admission):**
+  *  **General Examination:** No pallor, icterus, cyanosis, lymphadenopathy, or pedal edema. Pulse 92/min, BP 148/80 mmHg, CVS: S1 S2 (+), RS: Bilateral air entry (+), PA: Soft, non-tender, CNS: No motor deficits.
+  *  **Local Oral Examination:** Ulceroproliferative growth on the palate, tender on palpation, bleeding on probing. Lesion size 3x3mm.
+
+*  **January 10, 2024 (Day of Surgery):** Patient admitted to the hospital with the above-mentioned complaints. The patient underwent wide local excision, neck dissection and radial forearm free flap under general anesthesia (GA) after Pre-Anesthetic Clearance (PAC).
+
+*  **January 11, 2024:** Patient was shifted to MICU for post-operative care. Extubated uneventfully.
+
+*  **January 12, 2024:** Shifted to ward.
+
+*  **January 15, 2024:** Catheter removal, hand drain removal, and neck drain removal. The patient is now stable and fit for discharge. NG tube *in situ.*
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **Prior to January 10, 2024:** Likely suspicion of oral cancer based on the ulceroproliferative growth.
+*  **January 10, 2024:** Post-surgical status following wide local excision of the oral lesion, neck dissection, and radial forearm free flap reconstruction.
+*  **January 15, 2024:** Post-operative status, stable and fit for discharge.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **January 10, 2024:**
+  *  **Surgical Procedure:**
+    *  Wide local excision of the lesion on the palate.
+    *  Neck dissection.
+    *  Reconstruction with radial forearm free flap.
+    *  Anesthesia: General Anesthesia (GA)
+    *  Details: The surgical note specifies a wide local excision, neck dissection, and radial forearm free flap. This indicates removal of a tumor with a margin of healthy tissue, removal of lymph nodes in the neck (likely for staging and to prevent spread), and reconstruction of the defect with a flap of skin and tissue from the forearm. A radial forearm free flap involves harvesting skin, subcutaneous tissue, and the radial artery and cephalic vein from the forearm, and then transplanting it to the head and neck area to reconstruct the surgical defect.
+
+*  **Medications Given (During Hospital Stay):**
+  *  Inj. Gramocef-S, Inj. Metrogyl, Inj. Dolo, Inj. Dxona, Inj. Pantop, Inj. Emeset, IV fluids, Inj. Clexane, Tab. Rosuvas, Tab. Amalong, Tab. Thyronorm.
+
+*  **Advice on Discharge:**
+  *  Tab. Taxim O 200mg 1-0-1 x 5 days
+  *  Tab. Hifenac P 1-0-1 x 5 days
+  *  Tab. Pantop 40mg 1-0-0 x 5 days
+  *  Tab. Chymoral 2-2-2 x 5 days
+  *  Chlorhexidine mouth wash Q/D x to continue
+  *  Syp. Heam Up 5ml 1-0-1 x 1 month
+  *  Syp. Cremaffin 5ml 1-0-1 x 5 days (in case of constipation)
+  *  Neosporin ointment for local application
+  *  Review after 3 days in Oral & Maxillofacial Surgery OPD with Dr. Sanjiv Nair
+  *  Cardiology advice on discharge: Tab. Apixaban 5mg 1-0-1 x continue, review after 1 week in cardiology OPD.
+  *  Medicine advice on discharge: Continue same treatment, monitor BP at home, review after 1 week in general medicine OPD with BP reading at home.
+
+**8. Ambiguous Handwriting:**
+
+*  Bilateral air entry(+) - The "+" mark is next to the word entry, I assume the air entry is positive bilaterally.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **Prior to January 10, 2024:**
+  *  Pre-operative Assessment for Suspected Oral Cancer
+  *  Initial Oral Lesion Evaluation
+  *  Outpatient Palate Mass Consultation
+
+*  **January 10, 2024:**
+  *  Surgical Report: Wide Excision, Neck Dissection, RFFF
+  *  Operative Note: Oral Cancer Reconstruction
+  *  Post-operative Management Plan
+
+*  **January 11, 2024:**
+  *  Post-operative Progress Note (MICU)
+
+*  **January 15, 2024:**
+  *  Discharge Summary: Post-operative Oral Cancer Excision
+  *  Post-operative Discharge Instructions
+  *  Follow-up Consultation and Medication Plan
+
+Filename:img_5521.txt
+Okay, I will analyze the provided medical consultation note and extract the requested information.
+
+**1. Healthcare Facility:**
+
+*  **Name:** VIKRAM HOSPITAL
+*  **Location:** Bengaluru
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** (Not explicitly stated, but implied to be a referring physician)
+*  **Specialization:** Maxillofacial (Implied based on the note "Maxillofacial" and referral by Dr. Sanjiv Nair.)
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. RUPA AICH
+*  **Patient ID or Number:** IP-1
+
+**4. Consultation Dates:**
+
+*  2019-11-28
+*  2019-11-29
+*  2019-12-04
+
+**5. Clinical Findings (Date-wise):**
+
+*  **2019-11-28 (Collected On):** Excision biopsy of a right palatal verrucous lesion.
+*  **2019-11-29 (Received On):** N/A - Date of sample reception.
+*  **2019-12-04 (Reported On):**
+  *  Single mucosa-covered tissue bit measuring 7x2.5x1cm.
+  *  External surface mucosa shows a verrucous area covering the entire mucosa measuring 7x2.5x1.8cm.
+  *  Histological findings:
+    *  Hyperplastic squamous epithelium with hyperkeratosis, parakeratosis, and papillomatosis.
+    *  Irregular downward projection of rete ridges with squamous pearls.
+    *  Surface epithelium shows koilocytic changes.
+    *  Subepithelial infiltration by dense lymphocytes, plasma cells, and neutrophils.
+    *  Intraepithelial neutrophilic abscesses formed at places.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **2019-12-04:** Inflammatory verrucous hyperplasia (Pseudo epitheliomatous hyperplasia). No evidence of malignancy.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **2019-11-28:** Excision biopsy performed.
+*  **2019-12-04:** Kindly correlate clinically. (Implies further clinical assessment in light of pathology findings).
+
+**8. Ambiguous Handwriting:**
+
+*  "verr-----" in the Macroscopy section, describing the external surface of the mucosa.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **2019-11-28:**
+  *  Excision Biopsy Report
+  *  Surgical Pathology Consultation
+  *  Verrucous Lesion Excision Summary
+*  **2019-12-04:**
+  *  Surgical Pathology Report
+  *  Histopathology Assessment
+  *  Verrucous Hyperplasia Diagnosis
+
+Based on the context of the report, "Dr. Sanjiv Nair" is likely a referring physician in the field of Maxillofacial surgery. It appears that the patient was referred to the laboratory for a surgical pathology report based on an excision biopsy. The final diagnosis indicates Inflammatory verrucous hyperplasia, which warrants clinical correlation to guide further management.
+
+Filename:img_5535.txt
+Okay, I will analyze the medical consultation note and extract the requested information.
+
+Here's the structured analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** LIFE LINE DIAGNOSTIC CENTRE CUM NURSING HOME
+*  **Location:** 4A, WOOD STREET, KOL-700 016, Kolkata (Near Vardhan Market, Camac St.)
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sekhar Chakraborty
+*  **Credentials/Title:** BDS, MDS, FDS RCS, Eng., Consultant Oral & Maxillofacial Surgeon
+*  **Specialization:** Oral & Maxillo-Facial Oncology, Traumatology, Temporomandibular Joint Surgery & Salivary Gland Diseases
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. Rupa Aich
+*  **Patient ID or Number:** Not available
+
+**4. Consultation Date(s):**
+
+*  02/06/15 (June 2, 2015)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **02/06/15:** Post-operative review. The note indicates the patient is "All well".
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **02/06/15:** Post-operative recovery is proceeding well.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **02/06/15:**
+  *  Review after 4 months.
+  *  Continue \[Grape seed?\]. (Ambiguous handwriting - "Grape seed" is uncertain).
+
+**8. Ambiguous Handwriting:**
+
+*  The medication or supplement written after "Continue" is difficult to decipher. It appears to be "Grape seed" but could be something else.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **02/06/15:**
+  *  Post-Operative Review Summary
+  *  Clinical Follow-up Note
+  *  Surgical Outcome Assessment
+
+Filename:img_5531.txt
+Okay, I will analyze the provided medical consultation note and extract the requested information.
+
+Here's a structured analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital
+*  **Location:** Bengaluru, India (Millers Road, Opp. St. Anne's College, Bengaluru - 560052)
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kumar Shah
+*  **Credentials/Title:** Consultant Maxillofacial Surgeon, (MDS., FDS., FFD., FICOI)
+*  **Specialization:** Maxillofacial Surgery
+
+**3. Patient Details:**
+
+*  **Full Name:** RUVA Auna (Likely "Aruna", handwriting unclear)
+
+**4. Consultation Dates:**
+
+*  08/10/19
+*  12/11/19
+
+**5. Clinical Findings (Date-wise):**
+
+*  **08/10/19:**
+  *  Maxillary hyperplasia still present.
+  *  No new symptoms.
+  *  Now extending from right to left.
+  *  Mobility of 321 (*likely tooth numbers*).
+
+*  **12/11/19:**
+  *  CT scan - suggestion of Nedi
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **08/10/19:** Implied diagnosis related to maxillary hyperplasia and associated symptoms.
+*  **12/11/19:** Need examination of union + plate, Confirm Mobilty for neck dissection.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **08/10/19:**
+  *  CT with contrast for assessment of maxilla to week (*Likely means weekly follow-up*).
+
+*  **12/11/19:**
+  *  Needs wide excision of the palate.
+  *  Planned procedure details: 2-hour surgery under General Anesthesia (GA) with an anticipated 2-day hospital stay.
+  *  Confirm histology for neck dissection
+
+**8. Ambiguous Handwriting:**
+
+*  "Rura Auna" - Patient name might be "Ruva Aruna" or "Rura Alla" .
+*  "pernity" - unclear, possibly "persist" or similar.
+*  "extendy" - Probably "extending"
+*  "rygatom" - could be 'region'
+*  "Weeh" - Probably 'Need'
+*  "exon" - "excision"
+*  "dusection" - "dissection"
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **08/10/19:**
+  *  Maxillofacial Consultation Note
+  *  Hyperplasia Assessment Report
+  *  Radiological Investigation Order
+
+*  **12/11/19:**
+  *  Surgical Treatment Plan
+  *  Palatal Excision Protocol
+  *  Pre-operative Assessment
+
+**Important Considerations:**
+
+*  The note is brief and relies heavily on shorthand and implied information.
+*  Definitive diagnoses are not explicitly stated but can be inferred from the findings and planned procedures.
+*  Histological confirmation is essential for accurate diagnosis and treatment planning, particularly regarding the need for neck dissection.
+
+I hope this analysis is helpful. Let me know if you have any other questions.
+
+Filename:img_5512.txt
+Okay, I will analyze the provided image and extract the requested medical information. Here is the structured analysis of the consultation note:
+
+**1. Healthcare Facility:**
+
+*  Name: Not explicitly stated in the document but inferred to be affiliated with the contact information provided for Oral and Maxillofacial Surgery.
+*  Location: Not explicitly stated.
+
+**2. Consulting Physician:**
+
+*  Full Name: Dr. Sanjiv Nair
+*  Credentials/Title: Consultant Maxillofacial Surgeon
+*  Specialization: Oral and Maxillofacial Surgery
+
+**3. Patient Details:**
+
+*  Full Name: Mrs. Rupa Aich
+*  Patient ID: 726753
+*  In-Patient No: 235162
+
+**4. Consultation Date(s):**
+
+*  Only the discharge date is implied. No explicit dates are mentioned on the provided page.
+
+**5. Clinical Findings (Date-wise):**
+
+*  **Discharge Date:**
+  *  No specific clinical findings are documented on this page. The note indicates the patient has understood the discharge advice and needs to follow up.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **Discharge Date:**
+  *  No specific diagnosis is mentioned. The note suggests a prior assessment leading to the discharge.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **Discharge Date:**
+  *  Follow-up is recommended. No further treatment details are present.
+
+**8. Ambiguous Handwriting:**
+
+*  There are no handwritten sections on this page.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **Discharge Date:**
+  *  Discharge Summary
+  *  Follow-up Recommendation
+  *  Post-operative Instructions
+  *  Discharge Note
+
+I have extracted and structured the information from the image as accurately as possible. Please note the limitations due to the absence of specific dates and clinical details on the provided page.
+Based on the search results, here's some additional information about Dr. Sanjiv Nair:
+
+*  He is associated with multiple hospitals including Bhagwan Mahaveer Jain Hospital, Columbia Asia hospitals and B.M Jain Hospital in Bangalore.
+*  He is the Head of Department of Oral and Maxillofacial Surgery at the Bangalore Institute of Dental Sciences And Research.
+*  He has over 18 years of experience in Maxillofacial Surgery.
+*  He is the President of the International Association of Oral & Maxillofacial Surgeons.
+*  He completed his fellowship at the Royal College of Surgeons in Ireland.
+*  His surgical interests include ablation and reconstruction of orofacial malignancy, surgical treatment of vascular disorders and salivary gland surgeries.
+
+Filename:img_5527.txt
+Okay, I will analyze the medical consultation note and extract the requested information as accurately as possible.
+
+Here is the analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  Name: Likely Vikram Hospital (based on the letterhead visible at the bottom of the image, though partially obscured).
+*  Location: Likely Bangalore, India (based on the hospital website address visible at the bottom of the image: www.vikram[...].in)
+
+**2. Consulting Physician:**
+
+*  Full Name: Dr. Anyam (Handwriting may make this inaccurate).
+*  Credentials/Title: Dr.
+*  Specialization: Unable to determine from the note.
+
+**3. Patient Details:**
+
+*  Full Name: Not available in the visible portion of the note.
+*  Patient ID or Number: Likely "23875" (present on prescription).
+
+**4. Consultation Dates:**
+
+*  September 12, 2019 (9/12/19)
+*  December 12, 2019 (12/12/19)
+*  December 14, 2019 (14/12/19)
+*  January 11, 2020 (11/1/20)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **September 12, 2019:** Review done, patient doing well.
+*  **December 12, 2019:** Check-up done. Sore spots on shallow vestibule (right side) surgical area present. Dentine trimmed.
+*  **December 14, 2019:** "Orahen pro Mouth wash" - at 10:00 am.
+*  **January 11, 2020:** Healing well. No sign of hyperplastic tissue.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **September 12, 2019:** Post-operative review, satisfactory progress.
+*  **December 12, 2019:** Localized inflammation/irritation of the surgical site within the right buccal vestibule.
+*  **December 14, 2019:** Not explicitly diagnostic, but related to post-operative care.
+*  **January 11, 2020:** Resolution of hyperplasia or inflammation
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **September 12, 2019:** None noted.
+*  **December 12, 2019:** Rinse on Friday @ 12pm.
+*  **December 14, 2019:** Orahen Pro Mouthwash prescribed.
+*  **January 11, 2020:** Review in 2 weeks for re-line.
+
+**8. Ambiguous Handwriting:**
+
+*  "Mouth wenk" - Could potentially be "Mouth wash".
+*  "Orahen pro" - Could potentially be another drug prescription.
+*  "highl ndi" - Likely means "right side" in shorthand.
+*  Physician's signature is illegible.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **September 12, 2019:**
+  *  Post-operative Evaluation Summary
+  *  Clinical Progress Note
+  *  Patient Review Record
+*  **December 12, 2019:**
+  *  Post-operative Site Assessment
+  *  Localized Inflammation Evaluation
+  *  Vestibular Examination Report
+*  **December 14, 2019:**
+  *  Prescription Note
+  *  Medication Order
+  *  Mouthwash Prescription
+*  **January 11, 2020:**
+  *  Post-treatment Healing Assessment
+  *  Resolution of Hyperplasia Note
+  *  Clinical Follow-up Report
+
+**Additional Notes:**
+
+*  The prescription section at the top of the image seems unrelated to these consultation notes, or at least not explicitly connected by date.
+*  "R/v" is used as an abbreviation for review.
+*  The term "hyperplastic tissue" indicates an abnormal increase in the number of cells in a tissue.
+*  "Vestibule" is referring to the oral vestibule, which is the space inside the mouth between the teeth/gums and the inner lining of the cheeks and lips.
+*  It's essential to verify the physician's name and Vikram Hospital's exact address for accuracy.
+
+Filename:img_5530.txt
+Okay, I will analyze the provided serology report and extract the requested information.
+
+1. **Healthcare Facility:**
+
+  *  Name: VIKRAM HOSPITAL
+  *  Location: Bengaluru
+2. **Consulting Physician:**
+
+  *  Full Name: Dr. Swetha K
+  *  Credentials/Title: Consultant Microbiologist, MD Microbiology (KMC No.69169)
+  *  Specialization: Microbiology
+3. **Patient Details:**
+
+  *  Full Name: Mrs. RUPA AICH
+  *  Patient ID or Number: OP-4 (Visit/IP#)
+4. **Consultation Dates:**
+
+  *  Collected On: 2019-11-16
+  *  Received On: 2019-11-16
+  *  Reported On: 2019-11-16
+  *  Printed On: 2019-11-22
+5. **Clinical Findings (Date-wise):**
+
+  *  2019-11-16: The patient, Mrs. RUPA AICH, a 66-year-old female, was referred by Dr. Anjan Shah at the OPD. Specimen collected was serum.
+6. **Assessment/Diagnosis (Date-wise):**
+
+  *  2019-11-16: Based on the serology report, the patient is non-reactive for HCV Antibodies, HBsAg, and HIV 1 and 2 (P24 Antigen and Antibody).
+
+7. **Recommendations & Treatment Plan (Date-wise):**
+
+  *  2019-11-16: No specific treatment plan or recommendations are mentioned in the provided document, only serological test results.
+8. **Ambiguous Handwriting:**
+
+  *  There is no ambiguous handwriting in the report
+
+9. **Suggested Professional Titles (Date-wise):**
+
+  *  2019-11-16:
+    *  Serology Report
+    *  Microbiology Consultation Report
+    *  Infectious Disease Screening
+    *  Laboratory Medicine Report
+
+The information has been extracted and structured as requested from the serology report.
+
+Filename:img_5526.txt
+Okay, I will analyze the medical consultation note from the image and extract the requested information, organizing it by date.
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital
+*  **Location:** Bengaluru, India (Millers Road address)
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kumar Shah
+*  **Credentials/Title:** MDS, FDS, FFD, FICOI
+*  **Specialization:** Consultant Maxillofacial Surgeon
+
+**3. Patient Details:**
+
+*  Full Name: Not available
+*  Patient ID or Number: Not available
+
+**4. Consultation Dates:**
+
+*  February 11, 2014 (2/11/14)
+*  July 12, 2014 (7/12/14) - Saturday
+*  July 12, 2019 (7/12/19)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **February 11, 2014:**
+  *  Pain in ear/jaw
+  *  No swelling, bloody infection
+  *  Denture is stable.
+*  **July 12, 2019:**
+  *  Review done.
+  *  Patient doing well.
+  *  Denture trimmed.
+  *  Mobility of 1st tooth grade ist 54+
+  *  Lingual splinting done 1st tooth grade ist 543 + composite.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **February 11, 2014:**
+  *  Implied: Ear/Jaw pain likely related to infection.
+*  **July 12, 2019:**
+  *  Implied: Maintenance and adjustment of denture; lingual splinting due to tooth mobility.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **February 11, 2014:**
+  *  Not available
+*  **July 12, 2019:**
+  *  Review after a week
+  *  Prescription:
+    *  Lignocaine gel 2%
+    *  T. Hifenac p 1-0-1 x 3 days
+
+**8. Ambiguous Handwriting:**
+
+*  On 2/11/14: "Pain (n) ear/jaw" - The "(n)" might be indicating a specific side or note.
+*  Mobility ist st 54+ - The words may be describing grade of the mobility but it is difficult to decypher grade.
+*  543- difficult to decypher the number
+*  T. Hifenac P - it is hard to decypher the drug name.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **February 11, 2014:**
+  *  Initial Consultation Note
+  *  Infection Assessment
+  *  Orofacial Pain Evaluation
+*  **July 12, 2019:**
+  *  Post-operative Review
+  *  Denture Adjustment and Splinting
+  *  Follow-up Treatment Plan
+
+Based on the search results, "Hifenac P" is a combination medicine containing Aceclofenac and Paracetamol (Acetaminophen). It's a non-steroidal anti-inflammatory drug (NSAID) used for pain relief, reducing inflammation, and managing fever. It is commonly prescribed for dental pain and other musculoskeletal conditions.
+
+Filename:img_5508.txt
+Okay, I will analyze the medical consultation note and extract the required information.
+
+Here's the structured analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Aster CMI Hospital
+*  **Location:** \#43/2, New Airport Road, NH.7, Sahakara Nagar, Hebbal, Bangalore, Karnataka 560092, India.
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kuamr Shah
+*  **Credentials/Title:** (Based on search results) Oral & Maxillofacial Surgeon
+*  **Specialization:** Head & Neck Surgery, facial reconstruction with microvascular flaps and rehabilitation with implants.
+
+**3. Patient Details:**
+
+*  **Full Name:** RUPA AICH
+*  **Patient ID/Number (UHID):** 700283370
+
+**4. Consultation Dates:**
+
+*  2025-02-27
+*  2025-02-28
+
+**5. Clinical Findings (Date-wise):**
+
+*  **2025-02-27:** CT, PT scan.
+*  **2025-02-28:**
+  *  Pancreas: Normal in size, contour and attenuation. No evidence of focal mass/lesion or pancreatic duct dilatation. Post-contrast, no significant findings.
+  *  Kidneys: Normal in size and shape. No focal mass lesion/hydronephrosis/calculi. Few small left renal cortical cysts noted. Bilateral simple renal cortical cysts noted, largest ~18 x 18mm. Normal renal outlines with good concentration and prompt contrast excretion. Visualized ureter portions are normal.
+  *  Adrenal Glands: Normal in size, shape and attenuation.
+  *  Aorta and Extra Hepatic Portion of Inferior Vena Cava: Normal in calibre.
+  *  No Ascites.
+  *  Small/Large Bowel Loops: Appear normal. No stricture or dilated bowel loop abnormality.
+  *  Mesentery: Normal in visualized sections.
+  *  Urinary Bladder: Normal size and signal intensity. No focal mass lesion. Well-maintained surrounding fat planes. Mild irregular bladder wall thickening measuring ~8.3mm, suggesting cystitis.
+  *  Uterus: Atrophic with Lippe's loop IUCD in situ. No adnexal abnormality.
+  *  Musculo-Skeletal System:
+    *  No abnormal FDG avid lytic or sclerotic lesions in visualized bones.
+    *  Partial excision of the right maxillary alveolar process is noted associated with soft tissue graft (fat density) in the right buccal/maxillary regions as described with focal uptake in the left mandible as described above.
+    *  Degenerative changes noted in visualized spine with marginal osteophytes.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **2025-02-28:** Cystitis (based on mild irregular bladder wall thickening). Degenerative changes in the spine and status post partial excision of the right maxillary alveolar process.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **2025-02-27:** CT,PT scan
+*  **2025-02-28:** No specific treatment plan mentioned. Follow-up may be warranted for cystitis and degenerative spine changes.
+
+**8. Ambiguous Handwriting:**
+
+*  Kuamr (in Dr. Anjan Kuamr Shah) - Assuming this is Kumar.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **2025-02-27:** Imaging Study Ordered, Radiology Request
+*  **2025-02-28:**
+  *  Radiology Report Summary
+  *  Clinical Imaging Review
+  *  Musculoskeletal and Abdominal Imaging Assessment
+
+Filename:img_5522.txt
+Okay, I will analyze the provided medical note and extract the requested information.
+
+**1. Healthcare Facility:**
+
+*  **Name:** The Calcutta Medical Research Institute (CMRI)
+*  **Location:** 7/2, Diamond Harbour Road, Kolkata-700 027
+
+**2. Consulting Physician:**
+
+*  **Full Name:** DR. SEKHAR CHAKRABORTY
+*  **Credentials/Title:** (Not explicitly stated, presumed to be Dr.)
+*  **Specialization:** (Implied Dental based on department noted in the document)
+
+**3. Patient Details:**
+
+*  **Full Name:** RUPA AICH
+*  **Patient ID or Number:** PANA000191462, PUKA001693384
+
+**4. Consultation Dates:**
+
+*  2/4/2015 (Admission Date)
+*  3/4/2015 (Operation Date)
+*  6/4/2015 (Blood Investigation Date)
+*  10/4/2015 (Discharge Date)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **2/4/2015 (Admission):**
+  *  Chief Complaints: Burning sensation in cheek, decreased mouth opening.
+  *  On examination: Temperature - 98.4°F, Heart Rate - 85/min, Respiratory Rate - 20/min, Blood Pressure - 130/90 mmHg.
+  *  2cm white non-scrapable white patch in left cheek.
+  *  Decreased mouth opening.
+  *  Submucous fibrosis of both cheeks.
+  *  S1 S2 audible, Bilaterally clear breath sounds.
+
+*  **3/4/2015 (Operation):** (Findings are implicit in the procedure, see below)
+
+*  **6/4/2015 (Blood Investigation):** (Only lab values are listed)
+
+*  **10/4/2015 (Discharge):** (No specific findings listed, implies condition is stable/improved)
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **2/4/2015 (Admission):** Leukoplakia + Oral Submucous Fibrosis of both cheeks.
+
+*  **3/4/2015 (Operation):** (The procedure implies confirmation/treatment of the diagnosed conditions)
+
+*  **6/4/2015 (Blood Investigation):** (No diagnosis can be made from blood investigation date only)
+
+*  **10/4/2015 (Discharge):** (Diagnosis remains as above).
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **2/4/2015 (Admission):**
+  *  X-Ray Chest PA view (erect): Lung fields are clear. Costophrenic angles, domes of the diaphragm, both hilar shadows, cardiac shadow and aorta appear normal.
+
+*  **3/4/2015 (Operation):**
+  *  Excision of leukoplakia patch from left cheek.
+  *  Excision and release of fibrous band from both cheeks.
+  *  Repair with buccal pad fat and radial forearm graft.
+  *  10cc Local Anesthetic with adrenaline infiltrated in both cheeks.
+  *  Extraction of upper right and left 2nd molars, upper right 1st and upper left 3rd molars, and lower left 1st and 2nd molars.
+  *  Excision of left cheek fibrous band and repair with buccal pad fat using 3-0 vicryl suture.
+  *  Excision of white patch from right cheek.
+  *  Send for Histopathological Examination (HPE).
+  *  Excision of fibrous band from right cheek and repair with radial forearm graft from left arm.
+  *  Blood circulation of radial forearm graft maintained anastomosing radial artery & vein with superior thyroid artery & common facial vein.
+
+*  **6/4/2015 (Blood Investigation):** (No treatment plan specified on this date, just blood investigation.)
+
+**8. Ambiguous Handwriting:**
+
+*  "Blaw clear." Possibly "bowel sounds clear" however, it is situated near the S1 S2 auscultation, so this is uncertain.
+*  "uing radial forearm graft" may be "using radial forearm graft"
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **2/4/2015 (Admission):**
+  *  Initial Consultation Report
+  *  Admission Assessment
+  *  Pre-operative Evaluation
+
+*  **3/4/2015 (Operation):**
+  *  Surgical Report
+  *  Operative Note
+  *  Procedure Summary
+  *  Surgical Excision and Reconstruction Summary
+
+*  **10/4/2015 (Discharge):**
+  *  Discharge Summary
+  *  Post-operative Report
+
+I have extracted and structured the information from the provided image as accurately as possible.
+I have gathered additional information to enhance the response.
+
+**Oral Submucous Fibrosis (OSMF) and Leukoplakia:** These are considered oral potentially malignant disorders (OPMDs) that are most commonly seen in South Asia and Southeast Asian countries. Leukoplakia is often linked to tobacco use, while OSMF is often associated with areca/betel nut use.
+
+**Buccal Fat Pad Graft:** This involves using the buccal fat pad, a specialized fat located among the masticator muscles, for reconstruction. It can be used as a pedicled flap or a free graft to fill defects in the oral cavity and has a good blood supply.
+
+**Radial Forearm Flap:** This flap, including skin, fascia, and blood vessels from the forearm, is commonly used for head and neck reconstruction after cancer removal. It has the advantage of not shrinking significantly after healing, which helps preserve speech and swallowing function.
+
+**CAP and NABL Accreditations:** The College of American Pathologists (CAP) and the National Accreditation Board for Testing and Calibration Laboratories (NABL) are accreditation bodies that ensure laboratories adhere to high-quality standards and best practices. CMRI is accredited by both.
+
+Filename:img_5516.txt
+Here's an analysis of the provided medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** CARE DENTAL CLINIC'S, CARE ORAL PATHOLOGY SERVICES
+*  **Location:** 1st Floor, Gurukrupa Building, 44, Nagappa Street, Near Swastic Circle, Seshadripuram, Bangalore-20
+
+**2. Consulting Physician:**
+
+*  **Referring Physician:** Dr. Anjan Shah/Aster CMI Hospital
+*  **Pathologists:**
+
+  *  Dr. Radhika M. Bavle, MDS
+  *  Dr.Satyajit S. Topajiche, MDS
+  *  Dr. Soumya Makarla, MDS
+
+**3. Patient Details:**
+
+*  **Full Name:** Ms. Rupa Aich
+*  **Patient ID:** COPS 463
+
+**4. Consultation Date(s):**
+
+*  01/01/2024
+
+**5. Clinical Findings (Date-wise):**
+
+*  **01/01/2024:** Mid-palatal lesion. The lesion is described as ulcero-proliferative. A 1.8cm incisional biopsy was performed.
+*  **Histopathology Findings:** The section reveals parakeratinized dysplastic epithelium with pronounced hyperplasia and hypertrophy along with keratin plugging. Basal cell hyperplasia is noted in the bulbous rete ridges invading the submucosa. Dyskeratosis with epithelial and keratin pearls is present with individual cell keratinization. Invasion is present into connective tissue with small and large islands. The dysplastic epithelium shows multiple nucleoli, eosinophilic nucleoli and presence of mitotic figures (10-11/10 HPF) in the basal and parabasal areas involving the invasive edge. Abnormal mitosis noted. The stroma displays dense inflammation, rich in lymphocytes, plasma cells and eosinophils. Multiple mucous acini and ducts are noted along with dense inflammation near the invasive edge (type 3).
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **01/01/2024:** Features suggestive of "Invasive Squamous Cell Carcinoma". Verrucous Carcinoma converting into Invasive Squamous Cell Carcinoma
+  *  Clinical variant: Ulcero-proliferative
+  *  H/P Variant: Conventional
+  *  H/P Grade (Broders): Well differentiated
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **01/01/2024:** The report indicates a histopathological diagnosis based on an incisional biopsy. Further recommendations would depend on clinical correlation and staging, and are not explicitly stated in this report. The need for excision, further imaging, and treatment planning would be determined by the referring physician (Dr. Anjan Shah) in conjunction with other specialists.
+
+**8. Ambiguous Handwriting:**
+
+*  "Dagnoung Oral & trefacsa Pithinlnges-Insele cut"
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **01/01/2024:**
+  *  Histopathology Report
+  *  Oral Pathology Consultation Report
+  *  Invasive Squamous Cell Carcinoma Diagnosis
+
+Filename:combine.txt
+Okay, I will analyze the medical consultation note you provided and extract the relevant information as requested.
+
+Here's the structured analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** BMJH (Bhagwan Mahaveer Jain Hospital)
+*  **Location:** Bangalore, specifically with locations in Vasanth Nagar and Girinagar.
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kumar Shah
+*  **Credentials/Title:** Oral & Maxillofacial Surgeon, Sr. Consultant
+*  **Specialization:** Head & Neck Surgery, facial reconstruction, dental implants.
+
+**3. Patient Details:**
+
+*  **Full Name:** RUPA AICH
+*  **Patient ID or Number:** 726753
+
+**4. Consultation Date(s):**
+
+*  04-Jan-2024
+
+**5. Clinical Findings (Date-wise):**
+
+*  **04-Jan-2024:**
+  *  Supra-glottis, glottis, and sub-glottis are normal. Vocal cords are normal.
+  *  Thyroid gland is smaller in size and shows irregular margins and heterogeneous attenuation.
+  *  Polypoidal mucosal thickening in bilateral maxillary sinuses (left > right).
+  *  Visualized portions of supra and infratentorial regions appear normal.
+  *  Few tiny subsegmental sized subpleural nodular opacities measuring 1-4mm are noted in bilateral upper and right lower lobes.
+  *  A small parenchymal calcification is noted in the posterior basal segment of the left lower lobe.
+  *  Cardiomegaly with atherosclerotic aortic and coronary arterial calcifications are noted.
+  *  Few small lymph nodes are noted in pre/paratracheal, pre/subcarinal, and prevascular regions, the largest one measuring 15.0 x 8.0mm in the precarinal region. No evidence of calcifications within.
+  *  Spondylotic changes are noted in the cervical and dorsal spine.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **04-Jan-2024:**
+  *  Cardiomegaly with atherosclerotic changes.
+  *  Thyroid gland abnormality (smaller size, irregular margins, heterogeneous attenuation).
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **04-Jan-2024:**
+  *  No specific treatment plan is mentioned on the provided document. The document appears to be radiology report interpretation.
+
+**8. Ambiguous Handwriting:**
+
+*  "Aring with Compassion" written at the bottom is only partially visible.
+*  "Desophagus" instead of "Esophagus"
+*  The symbol used for 'greater than' in (left>right).
+*  'pondylotic' instead of 'Spondylotic'
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **04-Jan-2024:**
+  *  Radiology Consultation Report
+  *  CT Scan Interpretation
+  *  Thoracic and Sinus Imaging Findings
+
+
+Here is the structured analysis of the medical consultation note, based on the provided image and OCR text:
+
+**1. Healthcare Facility:**
+  - Name: Bhagwan Mahaveer Jain Hospital
+  - Location: Vasanthnagar, Bengaluru, India
+
+**2. Consulting Physician:**
+  - Full Name: Dr. Anjan Kumar Shah
+  - Credentials/Title: (Not specified, but presumed to be a referring physician)
+  - Specialization: (Not specified)
+
+**3. Patient Details:**
+  - Full Name: Rupa Aich
+  - Patient ID or Number: 726753
+
+**4. Consultation Date(s):**
+  - 04-Jan-2024 (Study Date)
+
+**5. Clinical Findings (Date-wise):**
+
+  - **04-Jan-2024:**
+   - Partial excision of the right maxillary alveolar process is noted, associated with soft tissue graft (fat attenuation) in the right buccal/maxillary regions.
+   - Multiple surgical clips are noted on the right side of the maxilla/mandible and upper neck regions.
+   - A well-defined soft tissue mass is noted along the hard palate in the midline and to the left side, showing mildly heterogeneous enhancement with few small non-enhancing cystic/necrotic areas in contrast study. It measures about 22.0mm (TR), 11.0mm (SI) and 26.0mm (AP).
+   - Erosion of the left paramedian portion of the hard palate, extending minimally into the inferior portion of the left nasal cavity, mildly compressing on the left inferior turbinate.
+   - No evidence of extension to the soft palate posteriorly.
+   - Few mildly prominent and enhancing lymph nodes are noted in bilateral level IA, IB, and V regions; the largest measures 11.0 x 7.0mm in the left level IB and 11.0 x 6.0mm in the right IB.
+   - Some level V lymph nodes show central fatty hilum – Reactive.
+   - The rest of the visualized maxilla, mandible, and bilateral temporomandibular joints appear normal.
+   - Light submandibular gland is relatively smaller in size – post-operative changes.
+   - Left submandibular and bilateral parotid glands appear normal.
+   - Oral tongue and floor of mouth appear normal.
+   - The rest of the oro- and hypopharynx are also normal.
+   - Nasopharynx is normal. No focal mass lesion.
+   - Retropharyngeal spaces are normal.
+   - Asymmetry of bilateral internal jugular vein is noted, with the left being more prominent than the right.
+   - Bilateral carotid arteries are normal. No evidence of thrombosis.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+  - **04-Jan-2024:**
+   - Post-surgical status following partial excision of right maxillary alveolar process with soft tissue graft.
+   - Soft tissue mass along the hard palate, likely neoplastic, based on enhancement characteristics and erosion. Lymph node involvement raises concern for metastasis.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+  - **04-Jan-2024:**
+   - Diagnostic tests ordered: CT Scan of Neck and Thorax (Plain & Contrast)
+   - Necessity for histological confirmation of the soft tissue mass is strongly indicated.
+   - Further management may involve surgical resection of the mass, depending on histological findings.
+
+**8. Ambiguous Handwriting:**
+  - None apparent from the OCR text.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+  - **04-Jan-2024:**
+   - CT Scan Interpretation Report
+   - Head and Neck Imaging Assessment
+   - Post-Surgical Evaluation and Neoplasm Suspicion
+
+Okay, I will analyze the provided image of the medical consultation note and extract the requested information.
+
+Here's the analysis of the medical note, organized as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** The Calcutta Medical Research Institute (CMRI)
+*  **Location:** 7/2, Diamond Harbour Road, Kolkata-700 027, West Bengal, India
+
+**2. Consulting Physician:**
+
+*  Based on the report, multiple doctors were involved. Here are some of them and their credentials.
+  *  **Dr. Sekhar Chakraborty**: Qualifications include BDS, MDS - Oral & Maxillofacial Surgery, FDSRCS - Fellowship in Dental Surgery. Other possible qualifications include MBBS, MS - General Surgery
+  *  **Dr. Susruta Sen:** MD, DNB in Biochemistry. Other qualifications include MBBS, PG Dip Diabetology, and PGDHHM.
+  *  **Dr. Koli Kundu:** Consultant Pathology.
+  *  **Dr. Indranil Roy:** MD, PDCC (Inf. Dis.) Consultant Microbiology. Other possible qualifications include MBBS, MD - General Medicine.
+  *  **Dr. Sumit Ghosh:** MD Consultant Pathology
+  *  **Dr. T.K.Ghosh**: MD, Director-Pathology.
+  *  **Dr. Md. Ehtesham**: MD (Path), Consultant Pathology. Other possible qualifications include Prof. Dr. Md. Ehteshamul Hoque : MBBS, MD (Nephrology)
+  *  **Dr. B.A.Savitha**: DNB (Path), Consultant Pathology
+  *  **Dr. R.N.Ghosh**: MRC Path, Vis. Consultant, Haematology
+  *  **Dr. Partha Sarathi Das**: MD Vis. Consultant Histopathology. Other possible qualifications include MS in 2003 and underwent his extensive training in Assisted Reproductive technology (ART) and Genetics at Jaslok Hospital and Research center in Mumbai, which is one of the foremost tertiary care hospital in India. He also has a sub-speciality training in Reproductive Medicine and Infertility from the prestigious University of Kiel in Germany and was also a visiting fellow in Reproductive Endocrinology and Infertility at the University of IOWA, USA.
+  *  **Dr. Subhranshu Mandal**: Registrar Microbiology. Other possible qualifications include MBBS, Fellowship in General Infectious Disease, MD Medical Microbiology and Bacteriology.
+*  **Credentials/Title:** (See above list for each doctor)
+*  **Specialization:** (See above list for each doctor)
+
+**3. Patient Details:**
+
+*  **Full Name:** RUPA AICH
+*  **Patient ID or Number:** PAN/PUK/TRN: PANA000191462 , Test Requisition No: TRQA002486943
+
+**4. Consultation Dates:**
+
+*  3/4/2015 (Sample Drawn/Collected/Received)
+*  6/4/2015 (Report Delivered)
+*  11-04-2015 (at the bottom right, likely a report generation date)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **3/4/2015:**
+  *  Clinical History: Leukoplakia
+  *  Gross Examination: Greyish brown small tissue piece measuring 1.2 cm in greatest dimension with a white patch on one side. Entire tissue processed.
+  *  Microscopically: Sections show fibromuscular & fibroadipose tissue containing minor sero-mucinous glands with overlying hyperplastic squamous epithelium showing hyperkeratosis. No evidence of malignancy / lichenoid changes seen.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **3/4/2015:**
+  *  Consistent with Oral Keratosis.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **3/4/2015:**
+  *  Specimen designated as excision biopsy of white patch on cheek.
+
+**8. Ambiguous Handwriting:**
+
+*  There is no ambiguous handwriting in the OCR extracted text.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **3/4/2015:**
+  *  Histopathology Report
+  *  Excision Biopsy Analysis
+  *  Oral Keratosis Evaluation
+  *  Pathology Consultation Report
+
+I have presented the information as accurately as possible based on the image and OCR provided.
+
+Okay, I will analyze the provided image and extract the medical information as requested, structured by date.
+
+Here is the analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** (Not explicitly mentioned in the note)
+*  **Location:** (Not explicitly mentioned in the note)
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. S. Gupta
+*  **Credentials/Title:** (Not explicitly mentioned, but implied to be a physician)
+*  **Specialization:** (Based on the note's content, likely Surgical or Maxillofacial). I will search to see if I can find a Dr. S. Gupta with one of these specializations
+
+**3. Patient Details:**
+
+*  **Full Name:** Dr. Aria (likely a reference, as "See Dr Aria" is written)
+*  **Patient ID or Number:** (Not available)
+
+**4. Consultation Dates:**
+
+*  November 17, 2019
+*  November 22, 2019
+*  November 28, 2019 (mentioned within the text for the 17th Nov entry)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **November 17, 2019:**
+  *  Impression of Max-Naly (likely Maxillary)
+  *  Palatal Lesion
+*  **November 22, 2019:**
+  *  U/L (Unilateral) Imp (Impression) made.
+  *  Jaw relation recorded.
+  *  Shade A2. Bite recorded.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **November 17, 2019:**
+  *  Palatal lesion requiring evaluation and possible excision.
+*  **November 22, 2019:**
+  *  Assessment of jaw relation and bite.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **November 17, 2019:**
+  *  Referral to Dr. Aria.
+  *  "Wide local excision of palatal lesion tentatively on 28-11-19"
+  *  Pre-op investigation due.
+  *  Advised: PAC (Pre-Anesthesia Checkup/ Pre-Atrial Contraction - needs context)
+  *  Physician fitness.
+*  **November 22, 2019:**
+  *  Jaw relation and bite assessment completed.
+
+**8. Ambiguous Handwriting:**
+
+*  "Max-Naly Impression" - likely "Maxillary Impression".
+*  "Tentatively" - could be something else, based on handwriting.
+*  "Pre of inven-gation" - Likely "Pre-op investigation".
+*  "Alised" - Likely "Advised"
+* "Physicia Ithess" - Likely Physician fitness
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **November 17, 2019:**
+  *  Consultation Note
+  *  Surgical Planning Summary
+  *  Pre-operative Assessment
+*  **November 22, 2019:**
+  *  Prosthodontic Assessment
+  *  Jaw Relation Record
+  *  Occlusal Analysis
+
+**Important Considerations and Clarifications:**
+
+*  **Healthcare Facility and Location:** The note doesn't explicitly mention the facility's name or location. This information would typically be present on a formal consultation note.
+*  **Physician Credentials:** While the note indicates "Dr. S. Gupta," the specific credentials and specialization (e.g., MD, DDS, etc.) are not provided. Further context is needed to determine their specific role.
+*  **PAC:** The abbreviation "PAC" is used. Without further context, it could refer to:
+  *  Pre-Anesthesia Checkup: A standard assessment to ensure patient safety before anesthesia.
+  *  Premature Atrial Contractions: A type of heart arrhythmia, which seems less likely in this context but still possible.
+* **Dr. Aria:** It is not clear from the context if Dr. Aria is another consulting physician or the actual patient.
+*  **Local Anesthesia:** The note mentions "local" for the excision. This suggests the procedure may be performed under local anesthesia, but that detail is not definitively stated.
+
+To provide a more complete and accurate analysis, additional information would be needed, especially the healthcare facility details and Dr. Gupta's specialization.
+
+Okay, I will analyze the provided image and extract the requested information.
+
+**Please note:** The image provided is a document outlining the "Terms & Conditions for Reporting" from "CARE DENTAL CLINIC'S" and "CARE ORAL PATHOLOGY SERVICES". It *does not* contain any patient-specific medical consultation notes, clinical findings, diagnoses, or treatment plans. Therefore, I cannot fulfill the majority of your request (points 4-9) as there is no such data present in the image.
+
+Here's what *can* be extracted:
+
+1. **Healthcare Facility:**
+
+  *  **Name:** CARE DENTAL CLINIC'S / CARE ORAL PATHOLOGY SERVICES
+  *  **Location:** 1st Floor, Gurukrupa Building, 44, Nagappa Street, Near Swastic Circle, Seshadripuram, Bangalore-20
+2. **Consulting Physician:**
+
+  *  **Dr. Radhika M. Bavle, MDS**
+  *  **Dr. Satyajit S. Topajiche, MDS**
+  *  **Dr. Soumya Makarla, MDS**
+3. **Patient Details:**
+
+  *  Not available from this image
+4. **Consultation Date(s):**
+
+  *  Not available from this image
+5. **Clinical Findings (Date-wise):**
+
+  *  Not available from this image
+6. **Assessment/Diagnosis (Date-wise):**
+
+  *  Not available from this image
+7. **Recommendations & Treatment Plan (Date-wise):**
+
+  *  Not available from this image
+8. **Ambiguous Handwriting:**
+
+  *  No handwriting to decipher as this is a printed document.
+9. **Suggested Professional Titles (Date-wise):**
+
+  *  Not applicable.
+
+I will now search for the names of the doctors listed to find their specializations.
+Updated Information:
+
+1. **Healthcare Facility:**
+
+  *  **Name:** CARE DENTAL CLINIC'S / CARE ORAL PATHOLOGY SERVICES
+  *  **Location:** 1st Floor, Gurukrupa Building, 44, Nagappa Street, Near Swastic Circle, Seshadripuram, Bangalore-20
+2. **Consulting Physician:**
+
+  *  **Dr. Radhika M. Bavle, MDS**: Oral & Maxillofacial Pathologist, academician, Head of Department of Oral & Maxillofacial Pathology at a Dental College and Hospital in Bangalore.
+  *  **Dr. Satyajit S. Topajiche, MDS**: Oral Pathologist, academician, Reader in the Dept of Oral and maxillofacial pathology at a private college and hospital in Bangalore.
+  *  **Dr. Soumya Makarla, MDS**: Oral Pathologist, academician, Reader in the Department of Oral & Maxillofacial Pathology in a Dental College and Hospital in Bangalore.
+3. **Patient Details:**
+
+  *  Not available from this image
+4. **Consultation Date(s):**
+
+  *  Not available from this image
+5. **Clinical Findings (Date-wise):**
+
+  *  Not available from this image
+6. **Assessment/Diagnosis (Date-wise):**
+
+  *  Not available from this image
+7. **Recommendations & Treatment Plan (Date-wise):**
+
+  *  Not available from this image
+8. **Ambiguous Handwriting:**
+
+  *  No handwriting to decipher as this is a printed document.
+9. **Suggested Professional Titles (Date-wise):**
+
+  *  Not applicable.
+
+As the provided image only contained terms and conditions for reporting and not specific patient data, most of your detailed request cannot be fulfilled. If you provide an image of actual consultation notes, I will gladly perform the analysis as requested.
+
+Okay, I will analyze the provided medical consultation note and extract the information as requested.
+
+Here's the analysis of the medical consultation note, presented in a structured format:
+
+**1. Healthcare Facility:**
+
+*  **Name:** AMRI Medical Centre
+*  **Location:** 97A, Southern Avenue, Kolkata - 700 029
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sekhar Chakrabarty
+*  **Credentials/Title:** B.D.S., M.D.S., F.D.S.R.C.S., Eng, Consultant Oral & Maxillo-Facial Surgeon, Specialist in Oral & Maxillofacial Oncology
+*  **Specialization:** Oral & Maxillo-Facial Surgery and Oral & Maxillofacial Oncology
+
+**3. Patient Details:**
+
+*  **Full Name:** Rupa Aich
+*  **Patient ID or Number:** Reg. No. (Not provided)
+
+**4. Consultation Date(s):**
+
+*  April 11, 2018
+
+**5. Clinical Findings (Date-wise):**
+
+*  **Date: April 11, 2018**
+  *  Post-operative review
+  *  A linear white patch is noted in the buccal sulcus anteriorly.
+  *  Observed that the size of which patch increases.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **Date: April 11, 2018**
+  *  *Possible diagnosis based on findings:* Leukoplakia or other potentially malignant lesion of the oral mucosa, based on the presence of a white patch in the buccal sulcus.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **Date: April 11, 2018**
+  *  Dr. check replaced to radial forearm. (Unclear, possibly related to a previous procedure or implant check)
+  *  Doubt well on 2015 April.
+  *  Advised: Daily or weekly self-inspection.
+  *  Laser ablation of the white patch is advisable in case the patch increases in size.
+  *  Necessity for histological confirmation: Implied if laser ablation is performed.
+  *  Logistical Details: Not specified, but if laser ablation is chosen, likely to be an outpatient procedure, potentially under local anesthesia.
+
+**8. Ambiguous Handwriting:**
+
+*  "Porr-op reven" - Interpreted as "Post-op review," but uncertain.
+*  "Dr. check repben o radial forearm" - Highly ambiguous. Possible interpretation: "Review check replacing of radial forearm implant" - This is speculative.
+*  "Dong well" - Could be "Doing well," or something else.
+*  "Dails or weekly belf" - Could be "Daily or weekly self"
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **Date: April 11, 2018**
+  1. Post-Operative Review & Assessment
+  2. Oral Mucosal Lesion Evaluation
+  3. Consultation Note: Leukoplakia Suspicion
+  4. Dental Laser Ablation Plan
+
+Okay, I will analyze the provided medical consultation note and extract the requested information.
+
+Here's an analysis of the medical note, structured as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital (Now known as Manipal Hospital)
+*  **Location:** Millers Road, Bengaluru (Bangalore), India.
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** Likely Professor (Prof.) or Doctor (Dr.) - possibly with BDS, MDS, FFDRCS qualifications, depending on the specific Dr. Sanjiv Nair.
+*  **Specialization:** Oral and Maxillofacial Surgeon.
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. RUPA AICH
+*  **Patient ID/Number:**
+  *  PRN: 242124
+  *  Visit No.: IP1
+  *  Admission No.: 73560
+
+**4. Consultation Dates:**
+
+*  27/11/2019 (Admission Date)
+*  29/11/2019 (Discharge Date)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **27/11/2019 (Admission):** No specific clinical findings are detailed on this document for the admission date.
+*  **29/11/2019 (Discharge):**
+  *  Age/Gender: 66 Years 2 Months 14 Days / Female
+  *  Discharge Mode: Normal
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  The document does not explicitly state a diagnosis. However, the patient was referred to the Oral & Maxillofacial department, suggesting a condition related to the oral cavity, jaws, or face.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **29/11/2019 (Discharge):**
+  *  Follow-up: Review after 3 days in Maxillofacial OPD with prior appointment. Contact number provided: 9620008637.
+
+**8. Ambiguous Handwriting:**
+
+*  "Dr. NOATH LABAN.S" - This is the name of the person who explained the discharge summary to the patient, and it is difficult to decipher, this could be a different variation of Dr. Nair's name.
+*  "UNDERST-oscopy"- It is difficult to understand what the word is here.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **27/11/2019 (Admission):**
+  *  Admission Note
+  *  Patient Registration Summary
+  *  Inpatient Assessment
+*  **29/11/2019 (Discharge):**
+  *  Discharge Summary
+  *  Maxillofacial Outpatient Referral
+  *  Post-operative Review Plan
+
+
+Okay, I will analyze the provided document and extract the information as requested.
+
+Here's the analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital (Bengaluru) Pvt. Ltd.
+*  **Location:** #71/1, Millers Road, Opp. St. Anne's College, Bengaluru - 560052, India
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sharitha Naganna
+*  **Credentials/Title:** Jr. Consultant Pathologist, MD Pathology
+*  **Specialization:** Pathology
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. RUPA AICH
+*  **Patient ID or Number:** 242124, OP-4
+
+**4. Consultation Date(s):**
+
+*  16/11/2019 (Collected, Received, and Reported On)
+*  22/07/2019 (Dated VHBPL/LAB/F/6/1.0/)
+*  22/11/2019 (Printed On)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **16/11/2019:** Haematology report indicates "Mild eosinophilia."
+*The specific values for various hematological parameters are present in the report, including Prothrombin Time (PT), Complete Blood Count (CBC) with differential counts. Some values are outside the biological reference interval such as I.N.R, Haemoglobin, Haematocrit, RDW-CV.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **16/11/2019:** Mild eosinophilia is indicated in the report. Further assessment might be required based on the complete clinical picture.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **16/11/2019:** No specific treatment plan is mentioned in the provided document. The report presents the results of a hematology test, which would likely inform further diagnostic or treatment decisions made by the primary care physician or specialist.
+
+**8. Ambiguous Handwriting:**
+
+*  The handwriting is generally legible in the OCR. The signature of Dr. Sharitha Naganna is present.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **For 16/11/2019:**
+  *  Hematology Report
+  *  Laboratory Analysis Report
+  *  Complete Blood Count Analysis
+* **For 22/07/2019:**
+  * VHBPL/LAB/F/6/1.0 Report.
+*  **For 22/11/2019:**
+  *  Print Date Confirmation
+  *  Record Verification
+
+
+Okay, I will analyze the medical consultation note you provided and extract the requested information.
+
+Here is the analyzed information from the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Not explicitly mentioned on the document.
+*  **Location:** Not explicitly mentioned on the document.
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Praveenkumar P Choudri
+*  **Credentials/Title:** MDRD, DNBRD, Consultant Radiologist
+*  **Specialization:** Radiology
+
+**3. Patient Details:**
+
+*  **Full Name:** Rupa Aich
+*  **Patient ID or Number:** 726753
+
+**4. Consultation Date(s):**
+
+*  January 4, 2024
+
+**5. Clinical Findings (Date-wise):**
+
+*  **January 4, 2024:**
+  *  Previous history of verrucous lesion of the right palate with post-excision, maxillectomy, and radical neck dissection on the right side.
+  *  Now presents with recurrent invasive squamous cell carcinoma of the palate.
+  *  Partial excision of the right maxillary alveolar process with soft tissue graft in the right buccal/maxillary regions. Multiple surgical clips are present in the right side of the maxilla/mandible and upper neck regions.
+  *  Well-defined heterogeneously enhancing soft tissue mass with small cystic/necrotic areas along the hard palate in the midline and to the left side. It is eroding the left paramedian portion of the hard palate and extending minimally into the inferior portion of the left nasal cavity, mildly compressing on the left inferior turbinate. No evidence of extension to the soft palate posteriorly.
+  *  Few mildly prominent and enhancing lymph nodes in bilateral level IA, IB, and V regions.
+  *  Few tiny subsegmental sized subpleural nodular opacities in bilateral upper and right lower lobes of the lungs.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **January 4, 2024:**
+  *  Recurrent malignant mass is suspected based on the findings.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **January 4, 2024:**
+  *  Clinical correlation suggested
+  *  Nature of lung opacities needs follow up
+
+**8. Ambiguous Handwriting:**
+
+*  "Sugg:" abbreviation is used to denote "Suggesting" or "Suggestion".
+*  "? Nature (Needs follow up)" - The exact nature being questioned regarding the lung opacities is unclear without further context.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **January 4, 2024:**
+  *  Radiology Consultation Report
+  *  Recurrent Palatal Carcinoma Imaging Review
+  *  Post-Surgical Maxillectomy Assessment
+
+Okay, I will analyze the provided image and extract the medical consultation note information as requested.
+
+Here's the analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Aster CMI Hospital
+*  **Location:** \#43/2, New Airport Road, NH.7, Sahakara Nagar, Hebbal, Bangalore, Karnataka 560092, India.
+
+**2. Consulting Physician (Radiologist):**
+
+*  **Full Name:** Dr. Jatin VK
+*  **Credentials/Title:** MD PDF (Diag. HPB & GI Imaging) EDIR, DICRI, Senior Specialist Radiologist
+*  **Specialization:** Radiology, specifically diagnostic Hepatobiliary and Gastrointestinal Imaging.
+
+**3. Consulting Physician (Nuclear Medicine):**
+
+*  **Full Name:** Dr. Mythri Shankar
+*  **Credentials/Title:** MD(USA), FACNM, FACNC, IBLM. Lead Consultant- Nuclear Medicine. Board Certified Lifestyle Medicine Physician.
+*  **Specialization:** Nuclear Medicine and Lifestyle Medicine.
+
+**4. Patient Details:**
+
+*  **Full Name:** Rupa Aich (Additional handwritten note suggests "Mrs. Rupa")
+*  **Patient ID or Number:** 70321945
+
+**5. Consultation Date(s):**
+
+*  27-02-2025
+*  28-02-2025
+
+**6. Clinical Findings (Date-wise):**
+
+*  **27-02-2025:** CT, PT Scan
+*  **28-02-2025:**
+  *  Case of Carcinoma Palate (Status post right palate lesion excision & leukoplakia excision on left cheek in 2015). Excision of venous lesion right palate on 28-11-2024, wide local excision and neck dissection and radial forearm free FLAP on 10-1-2024.
+  *  Compared to prior PET CT dated 8/1/24, present PET CT shows:
+    *  No abnormal FDG uptake/focal mass lesion in the surgical bed in the palate region.
+    *  Surrounding soft tissue inflammatory enhancement and subtle FDG uptake as described.
+    *  Interval resolution of previously noted FDG avid well-defined soft tissue density mass noted along the hard palate in the midline and to the left side.
+    *  Interval resolution of the inflammatory changes in the left paramedian portion of the hard palate which was abutting the left nasal cavity and compressing on the left inferior nasal turbinate.
+    *  New onset- focal FDG uptake (~1 x 1cm) in the left mandible in the region of the canine/premolar tooth with no corresponding CT lesion - ? Significance - For close follow-up imaging.
+    *  Interval metabolic resolution and size reduction in cervical and submandibular lymphadenopathy.
+    *  New onset- FDG avid subcarinal node and posterior mediastinal node at the same level- reactive.
+    *  No other new distant metastatic lesions.
+
+**7. Assessment/Diagnosis (Date-wise):**
+
+*  **28-02-2025:** Carcinoma Palate. The report indicates status post-excision and notes some areas of resolution and new findings warranting further investigation (focal FDG uptake in the mandible).
+
+**8. Recommendations & Treatment Plan (Date-wise):**
+
+*  **28-02-2025:**
+  *  Close follow-up imaging is recommended to investigate the new onset focal FDG uptake in the left mandible. The significance of this finding is currently uncertain.
+
+**9. Ambiguous Handwriting:**
+
+*  None apparent in the provided cropped text of the report.
+
+**10. Suggested Professional Titles (Date-wise):**
+
+*  **27-02-2025:** Imaging Study Order
+*  **28-02-2025:**
+  *  Radiology Interpretation Report
+  *  PET/CT Follow-up Assessment
+  *  Oncology Imaging Summary
+  *  Carcinoma Palate Evaluation
+
+Here's the analysis of the provided medical document, structured as requested:
+
+Here's an analysis of the medical note, organized by the requested categories:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Aster CMI Hospital
+*  **Location:** #43/2, New Airport Road, NH.7, Sahakara Nagar, Hebbal, Bangalore, Karnataka 560092, India.
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kuamr Shah
+*  **Credentials/Title:** Based on search results, Dr. Shah is an Oral & Maxillofacial Surgeon. He also has degrees including BDS, MDS, FDS RCS, FFD RCS, FICOI.
+*  **Specialization:** Oral and Maxillofacial Surgery, with a focus on Head & Neck Surgery and facial reconstruction.
+
+**3. Patient Details:**
+
+*  **Full Name:** Rupa Aich
+*  **Patient ID/Number:** 70321945
+*  **Age/Gender:** 71 years, 27 days / Female
+
+**4. Consultation Date(s):**
+
+*  27-02-2025
+*  28-02-2025
+
+**5. Clinical Findings (Date-wise):**
+
+*  **27-02-2025:**
+  *  "Study" date related to the CT/PT scan.
+*  **28-02-2025:**
+  *  Report date for PET CT Scan.
+  *  **Indication:** History of Ca Palate (status post right palate lesion excision & leukoplakia excision on the left cheek in 2015), excision of venous lesion right palate on 28-11-2024, wide local excision and neck dissection and radial forearm free FLAP on 10-1-2024 – Reassessment.
+  *  **Observations:**
+    *  Physiological FDG uptake is seen in the brain, oropharynx, gastrointestinal tract, heart, bowel, with normal tracer excretion in the kidneys and urinary bladder.
+    *  Brain parenchyma shows age-related neuroparenchymal atrophic changes and chronic small vessel ischemic changes in bilateral periventricular and frontoparietal lobes. No focal lesions are noted in the neuroparenchyma; paranasal sinuses and orbits appear normal.
+    *  Partial excision of the right maxillary alveolar process is noted associated with soft tissue graft (fat density) in the right buccal/maxillary regions. Multiple surgical clips are noted in the right side of the maxilla/mandible and upper neck regions. No abnormal FDG uptake/focal mass lesion. Surrounding soft tissue inflammatory enhancement and subtle FDG uptake noted.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **28-02-2025:** History of Ca Palate, status post multiple excisions and reconstruction, age-related brain changes. The PET CT scan is for reassessment.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **27-02-2025:** CT,PT Study.
+*  **28-02-2025:**
+  *  The PET CT scan report suggests monitoring of previously treated cancer of the palate and assessment of the soft tissue graft. No immediate interventions are explicitly recommended in the report.
+
+**8. Ambiguous Handwriting:**
+
+*  Oropharaynx (likely oropharynx)
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **27-02-2025:** Imaging Study Record, CT/PT Scan Order
+*  **28-02-2025:** PET CT Scan Report, Oncologic Imaging Assessment, Reassessment Imaging Summary
+
+Okay, I will analyze the medical consultation note and extract the requested information.
+
+Here's the analysis of the medical consultation note, structured as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** The Calcutta Medical Research Institute (CMRI)
+*  **Location:** 7/2, Diamond Harbour Road, Kolkata-700 027
+
+**2. Consulting Physician(s):**
+
+*  **Dr. Sekhar Chakraborty:** Oral And MaxilloFacial Surgeon, BDS, MDS - Oral & Maxillofacial Surgery, FDSRCS - Fellowship in Dental Surgery
+*  **Dr. Anupam Golash:** Plastic & Hand Surgeon, MBBS, DNB, MS(General Surgery), FRCSED, FRCS(Plastic Surgery).
+*  **Dr. Lina Chatterjee:** MBBS, MD, Diploma - Child Health
+
+**3. Patient Details:**
+
+*  **Patient ID:** PANA000191462
+
+**4. Consultation Date(s):**
+
+*  April 9, 2015
+*  April 17, 2015
+
+**5. Clinical Findings (Date-wise):**
+
+*  **April 9, 2015:** No explicit clinical findings are written on this date.
+*  **April 17, 2015:** No explicit clinical findings are written on this date.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **April 9, 2015:** The prescriptions suggest the patient might be experiencing symptoms related to hyperglycemia or diabetes and a possible fungal infection in the mouth (oral candidiasis).
+*  **April 17, 2015:** No explicit diagnosis is written on this date.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **April 9, 2015:**
+  *  **Medications:**
+    *  Tab Esam 2.5mg 1 tab once daily after breakfast.
+    *  Tab Thyronorm 100mcg 1 tab once daily before breakfast.
+    *  Tab Glyciphage 500mg 1/2 tab daily before breakfast.
+    *  Syp Unienzyme / Carmozyme 2 tsf once daily after meal.
+    *  Tab Augmentin 625mg 1 tab thrice daily after meal for 5 days.
+    *  Cap Raciper D 1 cap daily before breakfast for 7 days.
+    *  Tab Parasafe 650mg 1 tab thrice daily after meal for 5 days.
+    *  Candid mouth paint apply thrice daily after meal on dorsum of tongue.
+    *  Clohex Plus mouth wash add 10ml of mouth wash in cup of luke warm water and rinse 5/6 times daily.
+  *  **Instructions:** Brush twice daily; soft diet as directed by dietician.
+  *  **Follow-up:** Follow up on 17.04.2015 OPD at 1PM with Dr. Sekhar Chakraborty & with Dr. Anupam Golash in speciality clinic prior taking appointment. Follow up with Dr. Lina Chatterjee after 2 weeks with FBS & PPBS blood reports.
+*  **April 17, 2015:**
+
+  *  Follow up as an outpatient with Dr. Sekhar Chakraborty and Dr. Anupam Golash.
+  *  Follow up with Dr. Lina Chatterjee after 2 weeks for FBS & PPBS blood reports.
+  *  Indication for diet as directed by dietician
+
+**8. Ambiguous Handwriting:**
+
+*  The signature of MO/Registrar is difficult to decipher.
+*  The doctor’s signature under the title ‘Consultant’s Signature’ is illegible.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **April 9, 2015:**
+  *  Outpatient Consultation Note
+  *  Medication Prescription and Management Plan
+  *  Diabetic and Oral Candidiasis Treatment Plan
+*  **April 17, 2015:**
+  *  Follow-up Consultation Summary
+  *  Post-Assessment Review
+  *  Specialty Clinic Review
+
+Okay, I will analyze the provided image and extract the requested information as accurately as possible.
+
+Here's the structured analysis of the provided medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** CARE ORAL PATHOLOGY SERVICE
+*  **Location:** 1st Floor, Gurukrupa Building, 44, Nagappa Street, Near Swastic Circle, Soshadripuram, Bangalore
+
+**2. Consulting Physician(s):**
+
+*  **Dr. Radhika M. Bavle:**
+  *  **Credentials:** MDS (Master of Dental Surgery)
+  *  **Specialization:** Oral & Maxillofacial Pathology
+*  **Dr. Satyajit S. Topajiche:**
+  *  **Credentials:** MDS (Master of Dental Surgery)
+  *  **Specialization:** Oral Pathology
+*  **Dr. Soumya Mal:**
+  *  **Credentials:** Not specified in the document. Other source says MBBS & M.D.(Pathology)
+
+**3. Patient Details:**
+
+*  Patient's full name and patient ID are not available in the document.
+
+**4. Consultation Date(s):**
+
+*  The consultation date is not explicitly mentioned on the document. However, since this is a pathology report, the date refers to when the sample was analyzed.
+
+**5. Clinical Findings (Date-wise):**
+
+*  **Date:** Not specified
+  *  **Parameters & Findings (Based on Aneroth's Multi-factorial grading system):**
+    *  Degree of Keratinization: Moderately keratinized (20-50% of the cells)
+    *  Nuclear Pleomorphism: Little nuclear polymorphism (>75% mature cells)
+    *  Mitosis (HPF - High Power Field): 2-3 mitoses per field
+    *  Pattern of Invasion: Type 3
+    *  Stage/Level of Invasion: Distinct Invasion, but involving lamina propria only.
+    *  Lympho-plasmacytic Infiltration: Slight
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **Date:** Not specified
+  *  **Grade:** Grade II (11-15) based on the total score. The specific diagnosis (e.g., specific type of lesion or carcinoma) is not explicitly stated, but the grading suggests a neoplastic process.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  The document does not contain treatment plans or recommendations. It is a pathology report, which informs clinical decision-making.
+
+**8. Ambiguous Handwriting:**
+
+*  N/A as the document is a pathology report with typed text.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  Given the content, the following titles would be appropriate:
+  *  Oral Pathology Report
+  *  Histopathological Assessment
+  *  Aneroth's Grading System Analysis
+  *  Pathology Consultation Report
+
+**Important Considerations:**
+
+*  **Lack of Patient Identifiers:** The absence of the patient's name and ID is a significant issue. A pathology report should always include these details for accurate record-keeping and patient safety.
+*  **Missing Clinical Context:** This report provides histological findings, but lacks the clinical context. A complete medical record would include the referring clinician's notes, reason for biopsy, and relevant patient history.
+*  **Grading System:** The report uses the "Aneroth's Multi-factorial grading system." Clarification on what this grading system is used for is beneficial.
+
+**Disclaimer:** As an AI, I am unable to provide medical diagnoses. This analysis is for informational purposes only and should not substitute professional medical advice. A qualified healthcare professional should interpret the pathology report in conjunction with the patient's clinical information.
+
+Okay, I will analyze the provided histopathology/cytopathology report.
+
+Here's a breakdown of the information extracted from the provided histopathology/cytopathology report:
+
+**1. Healthcare Facility:**
+
+*  **Name:** R.S. TRIBEDI & ROY DIAGNOSTIC LABORATORY
+*  **Location:** 93, Park Street, Kolkata-700 016
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. S. Chakraborty
+*  **Credentials/Title:** Not specified in the document but likely to be a pathologist based on the report type.
+*  **Specialization:** Pathology
+
+**3. Patient Details:**
+
+*  **Full Name:** Rupa Aich
+
+**4. Consultation Date(s):**
+
+*  2015-04-22 (Date of Receipt & Date of Report)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **2015-04-22:**
+  *  The biopsy from the cheek shows hyperkeratosis and acanthosis of the lining stratified squamous epithelium.
+  *  Beneath the lining epithelium are bundles of muscle fibres, fibrocollagenous tissue, and a minor salivary gland.
+  *  No evidence of dysplasia or malignancy.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **2015-04-22:**
+  *  Keratosis, cheek.
+  *  No dysplasia.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **2015-04-22:**
+  *  Histopathology slide and block (No. SS1091/15 (RA) for opinion - Excised white patch in cheek.
+
+**8. Ambiguous Handwriting:**
+
+*  None apparent in this document.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **2015-04-22:**
+  *  Histopathology Report
+  *  Cytopathology Assessment
+  *  Pathology Consultation Report
+
+
+Okay, I will analyze the provided medical consultation note image and extract the requested information in a clear and organized manner.
+
+Here's the breakdown of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital
+*  **Location:** Bengaluru
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** KMC (Karnataka Medical Council)
+*  **Specialization:** Oral and Maxillofacial Surgeon (based on search results indicating his specialization and role as Head of Department of Oral and Maxillofacial Surgery)
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. Rupa Aich
+*  **Patient ID or Number:** 242124
+
+**4. Consultation Date(s):**
+
+*  November 29, 2019
+
+**5. Clinical Findings (Date-wise):**
+
+*  **November 29, 2019:** No specific clinical findings are mentioned in the prescription.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **November 29, 2019:** Based on the medication prescribed, potential diagnoses could include:
+  *  Bacterial infection (Cefuroxime)
+  *  Acid peptic disease (Pantoprazole)
+  *  Oral hygiene maintenance (Chlorhexidine)
+  *  Hypothyroidism (Thyroxine Sodium)
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **November 29, 2019:**
+  *  **Medications Prescribed:**
+    *  Cefuroxime 250mg (Ceftum 250mg Tab): 1-0-1 (twice daily) for 5 days, oral.
+    *  Pantoprazole 40mg (Pan 40 mg Tab): 1-0-0 (once daily) for 5 days, oral, before food.
+    *  Tab. Imol: 1-0-1 (twice daily) for 5 days, oral.
+    *  Chlorhexidine 0.2% (Clohex Oral Rinse 150ml): 1-1-1-1 (four times daily) for 5 days, oral rinse.
+    *  Tab. Esam 1.25 mg: 1-0-0 (once daily), oral.
+    *  Thyroxine Sodium 100mcg (Eltroxin 100mcg Tab): 1-0-0 (once daily), oral.
+
+**8. Ambiguous Handwriting:**
+
+*  Below the prescription table, there is some handwritten text that is difficult to decipher. Possible interpretations include phrases related to "side" or additional notes on the medications. "I side) in" and other words under this seem to be illegible due to handwriting. Also, the signature of the doctor is unreadable
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **November 29, 2019:**
+  *  Prescription Note
+  *  Medication Management Plan
+  *  Outpatient Prescription
+
+
+Okay, I will analyze the provided medical note and extract the requested information.
+
+Here's the analysis of the medical note, organized as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital
+*  **Location:** Bengaluru, India; Office & Hospital: #71/1, Millers Road, Opp. St. Anne's College, Bengaluru - 560 052
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** Oral & Maxillofacial Surgeon; Professor and Head of Department, Oral and Maxillofacial Surgery
+*  **Specialization:** Oral & Maxillofacial Surgery
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. Rupa Aich
+*  **Patient ID/Number:**
+  *  PRN: 242124
+  *  Visit No.: IP1
+  *  Admission No.: 73560
+
+**4. Consultation Dates:**
+
+*  27/11/2019 (Admission Date)
+*  28/11/2019 (Procedure Date)
+*  29/11/2019 (Discharge Date)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **27/11/2019 (Admission):**
+  *  Patient presented with complaints of maxillary hypoplasia.
+  *  Past History: Hypertension, Hypothyroidism
+  *  Temperature: 98.2° F, Pulse Rate: 97/Min, R.R.: 20/Min, B.P.: 130/80 mm of Hg, SpO2: 96% at RA
+  *  CNS: Conscious and oriented
+  *  CVS: S1S2+
+  *  P/A: Soft, BS+
+  *  RS: Bilateral NVBS+
+*  **28/11/2019 (Procedure):**
+  *  Excision of verrucous lesion - right palate under GA
+*  **29/11/2019 (Discharge):**
+  *  Patient symptomatically better.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **27/11/2019:** Maxillary hypoplasia.
+*  **29/11/2019:** Verrucous lesion - Right Palate
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **28/11/2019:**
+  *  Surgical procedure: Excision of verrucous lesion – right palate.
+  *  Anesthesia: General Anesthesia (GA)
+  *  Post-operative care: IV fluids, IV antibiotics (Inj. Cefazolin 1.5 gm), IV analgesics, IV antacids, IV anti-emetics, and other supportive measures.
+*  **29/11/2019 (Discharge Advice):**
+  *  Medication:
+    *  Cefuroxime 250mg (Ceftum 250mg Tab): 1-0-1, 5 days, Oral
+    *  Pantoprazole 40mg (Pan 40 mg Tab): 1-0-0, 5 days, Oral (Before Food)
+    *  (Tab. Imol): 1-0-1, 5 days, Oral
+    *  Chlorhexidine 0.2% (Clohex Oral Rinse 150ml): 1-1-1-1, 5 days, Oral
+    *  (Tab. Esam 1.25 mg): 1-0-0, Daily, Oral
+    *  Thyroxine Sodium 100mcg (Eltroxin 100mcg Tab): 1-0-0, Daily, Oral
+  *  Advice obturator in place.
+
+**8. Ambiguous Handwriting:**
+
+*  `(TAB. IMOL)`
+*  `ESAM 1.25 MG`
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **27/11/2019 (Admission):**
+  *  Admission Assessment Report
+  *  Initial Consultation Summary
+  *  Pre-operative Evaluation
+  *  Maxillary Hypoplasia Assessment
+*  **28/11/2019 (Procedure):**
+  *  Surgical Procedure Note
+  *  Verrucous Lesion Excision Report
+  *  Post-operative Management Plan
+  *  Operative Summary
+*  **29/11/2019 (Discharge):**
+  *  Discharge Summary
+  *  Post-operative Care Instructions
+  *  Medication Reconciliation Report
+  *  Patient Discharge Note
+
+Okay, I will analyze the medical consultation note from the image and extract the requested information in a structured, date-wise manner.
+
+**1. Healthcare Facility:**
+
+*  **Name:** Aster CMI Hospital
+*  **Location:** #43/2, New Airport Road, NH. 7, Sahakara Nagar, Hebbal, Bangalore, Karnataka 560092, India
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kuamr Shah
+*  **Credentials/Title:** (Not explicitly stated, but implied to be a medical doctor - "Dr.")
+*  **Specialization:** (Not explicitly stated in the document)
+
+**3. Patient Details:**
+
+*  **Full Name:** Rupa Aich
+*  **Patient ID or Number:** 70321945
+
+**4. Consultation Dates:**
+
+*  2025-02-27
+*  2025-02-28
+
+**5. Clinical Findings (Date-wise):**
+
+*  **2025-02-27 (CT,PT Study):** (No specific findings are listed under this date)
+*  **2025-02-28 (Report):**
+  *  Interval resolution of a previously noted FDG avid well-defined soft tissue density mass along the hard palate in the midline and to the left side, previously measuring approximately 4.0x2.0x2.6cm (AP x TR x CC) with SUV max of 10.45.
+  *  Interval resolution of the inflammatory changes in the left paramedian portion of the hard palate which was abutting the left nasal cavity and compressing on the left inferior nasal turbinate.
+  *  Focal FDG uptake (~1 x 1cm) noted in the left mandible in the region of the canine/premolar tooth with no corresponding CT lesion with SUV max of 14.7.
+  *  Few sub-cm prominent and enhancing non-FDG avid lymph nodes are seen at right level Ib (8 x 7mm), right level III ~11x7mm (reactive). No other significant FDG avid cervical lymphadenopathy.
+  *  Right submandibular gland is small in size-post-operative changes.
+  *  Left submandibular and bilateral parotid glands appear normal.
+  *  Nasopharynx is normal.
+  *  Parapharyngeal spaces are normal.
+  *  Oro and hypopharynx are also normal.
+  *  Supra-glottis, glottis and sub-glottis are normal.
+  *  Thyroid is atrophic.
+  *  **Chest:**
+    *  Stable ~3mm non FDG avid nodule in the anterior segment of left upper lobe (HRCT #35), ~3mm right transverse parafissural nodule (HRCT 75).
+    *  Few thin-walled parenchymal cysts are seen in the right upper and left lower lobe.
+    *  Rest of the lungs show normal parenchymal attenuations. No FDG avid nodules or focal mass lesion.
+    *  No evidence of pleural effusion.
+    *  Cardia appears mildly enlarged in size with coronary artery calcifications.
+    *  Esophagus appears normal.
+    *  New onset- FDG avid subcarinal node ~17 x 10mm and posterior mediastinal node ~16 x 11mm with SUV max of 6.8 at the same level. Few non FDG avid/ minimal FDG avid pretracheal, paratracheal, AP window nodes noted.
+  *  **Abdomen & Pelvis:**
+    *  Liver: Normal in size, shape, outlines and parenchymal attenuation. No evidence of intrahepatic biliary radicular dilatation. Few tiny hepatic cysts noted in segment 4a and 8 measuring ~2-3mm. No FDG avid focal hypodense lesion.
+    *  Gall bladder: is adequately distended. No calculus. Wall appears normal. Normal peri-cholecystic area.
+    *  Spleen: Spleen is normal in size, shape and attenuation values. Post contrast sections show no significant point of note. Splenunculus measuring 14mm noted in the inferomedial aspect of spleen.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **2025-02-27:** (Likely related to CT scan scheduling, no diagnosis explicitly listed)
+*  **2025-02-28:**
+  *  Post-operative changes in the right submandibular gland.
+  *  Atrophic thyroid.
+  *  Coronary artery calcifications.
+  *  Splenunculus.
+  *  New onset FDG avid subcarinal and posterior mediastinal nodes
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **2025-02-27:** CT,PT scan was scheduled.
+*  **2025-02-28:** No specific recommendations or treatment plan mentioned on this date other than the findings in the report. Further management might be based on these findings.
+
+**8. Ambiguous Handwriting:**
+
+*  There are no ambiguities in the provided OCR.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **2025-02-27:**
+  *  CT Scan Scheduling Note
+  *  Radiology Order Confirmation
+  *  Imaging Study Request
+
+*  **2025-02-28:**
+  *  Radiology Report
+  *  Comprehensive Imaging Findings
+  *  Post-operative and Incidental Findings Report
+  *  CT Scan Interpretation
+
+
+Here's a breakdown of the medical consultation note, structured and organized as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** LIFE LINE DIAGNOSTIC CENTRE CUM NURSING HOME
+*  **Location:** 4A, WOOD STREET, KOL-700 016 (Near Vardhan Market, Camac St.), Kolkata
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sekhar Chakraborty
+*  **Credentials/Title:** BDS, MDS, FDS RCS, Eng., CONSULTANT ORAL & MAXILLOFACIAL SURGEON
+*  **Specialization:** Oral & Maxillo-Facial Oncology, Traumatology, Temporomandibular Joint Surgery & Salivary Gland Diseases
+
+**3. Patient Details:**
+
+*  **Full Name:** Ms. Rupa Dich
+
+**4. Consultation Date(s):**
+
+*  28/03/12
+
+**5. Clinical Findings (Date-wise):**
+
+*  **28/03/12:**
+  *  **ME (Medical Examination) Rr cheek absolutely OK.**
+  *  **Left cheek:** Erythematous, Scarred
+  *  **DD (Differential Diagnosis):** Dysplastic changes of left cheek mucosa
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **28/03/12:**
+  *  Dysplastic changes in the left cheek mucosa are suspected, based on clinical findings of erythema and scarring.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **28/03/12:**
+  *  "le tenormte ointment to apply locally"
+
+**8. Additional Findings**
+
+*  **Post-op review**
+*  **Reukoplakia Rr. Cheek**
+*  **pented in 2015**
+*  **3 Excision**
+*  **by Radial forearm**
+*  **flap**
+
+**9. Ambiguous Handwriting:**
+
+*  "absolubl" - Likely intended to be "absolutely."
+*  "le tenormte ontent" - Could be "Betamethasone ointment" but is difficult to decipher completely.
+*  "apps locals" - likely intended to be "apply locally"
+*  "Reukoplakia" - Likely intended to be "Leukoplakia"
+
+**10. Suggested Professional Titles (Date-wise):**
+
+*  **28/03/12:**
+  *  Clinical Assessment Report
+  *  Mucosal Dysplasia Evaluation
+  *  Dermatological Consultation Summary
+
+Okay, I will analyze the provided discharge summary and extract the requested information.
+
+Here is the analyzed information from the discharge summary, structured as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Bhagwan Mahaveer Jain Hospital
+*  **Location:** Vasanthnagar, Bengaluru, India (#17, Millers Road, Vasanthnagar, Bengaluru - 560052)
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** Not explicitly stated, but likely an Oral and Maxillofacial Surgeon
+*  **Specialization:** Oral & Maxillo Facial Surgery
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. Rupa Aich
+*  **Patient ID/Number:** 726753
+
+**4. Consultation Dates:**
+
+*  09/01/2024 (Admission Date & Time: 01:50 PM)
+*  17/01/2024 (Discharge Date & Time: 10:30 AM)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **09/01/2024 (Admission):**
+  *  Chief Complaints: Complaints of burning sensation in the palate region since 14 days.
+  *  History of Present Illness: History of bilateral cheek region with excision of lesion reconstruction with radial forearm flap and buccal pad in 2015. Previous palatal verrucous lesion excision in 2019.
+  *  Past History: Known case of hypertension for 10 years on Tab. Amlong. Known case of hypothyroidism on Tab. Thyronorm.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **09/01/2024 (Admission):**
+  *  Carcinoma of the Palate
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **09/01/2024 (Admission):**
+  *  Surgical Procedure Suggested: Wide local excision + Neck dissection + Radial forearm free flap
+
+**8. Ambiguous Handwriting:**
+
+*  "a 034 krishvi gavaushi gear rdkadubeesanahalli" is unclear, likely part of the patient's address.
+*  "F/B" in "F/B Palatal verucous lesion excision in 2019" is unclear, likely "Followed by" or "For".
+*  "hismer" in "VALID ONLY FOR DISCHARGE SUMMARY - PLEASE NOTE: In case there are any corrections to be made in the Discharge Summary, it is the responsibility of the patient or hismer authorised" is unclear and probably "his/her".
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **09/01/2024 (Admission):**
+  *  Admission Assessment
+  *  Pre-operative Surgical Planning
+  *  Oncology Consultation Summary
+
+*  **17/01/2024 (Discharge):**
+  *  Discharge Summary
+  *  Post-operative Report
+  *  Surgical Outcome Summary
+
+
+Okay, I will analyze the provided medical consultation note and extract the requested information.
+
+Here's a detailed analysis of the medical note, organized as requested:
+
+**1. Healthcare Facility:**
+
+*  **Name:** (Not explicitly mentioned in the document but can be inferred from the consultant's details below) Bhagwan Mahaveer Jain Hospital
+*  **Location:** (Not explicitly mentioned in the document but can be inferred from the consultant's details below) Bangalore, India
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** Possibly BDS, MDS, FFDRCS, DNB
+*  **Specialization:** Oral and Maxillofacial Surgeon
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. Rupa Aich
+*  **Patient ID:** 726753
+*  **In-Patient No:** 235162
+
+**4. Consultation Dates:**
+
+*  January 10, 2024
+*  January 11, 2024
+*  January 12, 2024
+*  January 15, 2024
+
+**5. Clinical Findings (Date-wise):**
+
+*  **Prior to January 10, 2024 (Admission):**
+  *  **General Examination:** No pallor, icterus, cyanosis, lymphadenopathy, or pedal edema. Pulse 92/min, BP 148/80 mmHg, CVS: S1 S2 (+), RS: Bilateral air entry (+), PA: Soft, non-tender, CNS: No motor deficits.
+  *  **Local Oral Examination:** Ulceroproliferative growth on the palate, tender on palpation, bleeding on probing. Lesion size 3x3mm.
+
+*  **January 10, 2024 (Day of Surgery):** Patient admitted to the hospital with the above-mentioned complaints. The patient underwent wide local excision, neck dissection and radial forearm free flap under general anesthesia (GA) after Pre-Anesthetic Clearance (PAC).
+
+*  **January 11, 2024:** Patient was shifted to MICU for post-operative care. Extubated uneventfully.
+
+*  **January 12, 2024:** Shifted to ward.
+
+*  **January 15, 2024:** Catheter removal, hand drain removal, and neck drain removal. The patient is now stable and fit for discharge. NG tube *in situ.*
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **Prior to January 10, 2024:** Likely suspicion of oral cancer based on the ulceroproliferative growth.
+*  **January 10, 2024:** Post-surgical status following wide local excision of the oral lesion, neck dissection, and radial forearm free flap reconstruction.
+*  **January 15, 2024:** Post-operative status, stable and fit for discharge.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **January 10, 2024:**
+  *  **Surgical Procedure:**
+    *  Wide local excision of the lesion on the palate.
+    *  Neck dissection.
+    *  Reconstruction with radial forearm free flap.
+    *  Anesthesia: General Anesthesia (GA)
+    *  Details: The surgical note specifies a wide local excision, neck dissection, and radial forearm free flap. This indicates removal of a tumor with a margin of healthy tissue, removal of lymph nodes in the neck (likely for staging and to prevent spread), and reconstruction of the defect with a flap of skin and tissue from the forearm. A radial forearm free flap involves harvesting skin, subcutaneous tissue, and the radial artery and cephalic vein from the forearm, and then transplanting it to the head and neck area to reconstruct the surgical defect.
+
+*  **Medications Given (During Hospital Stay):**
+  *  Inj. Gramocef-S, Inj. Metrogyl, Inj. Dolo, Inj. Dxona, Inj. Pantop, Inj. Emeset, IV fluids, Inj. Clexane, Tab. Rosuvas, Tab. Amalong, Tab. Thyronorm.
+
+*  **Advice on Discharge:**
+  *  Tab. Taxim O 200mg 1-0-1 x 5 days
+  *  Tab. Hifenac P 1-0-1 x 5 days
+  *  Tab. Pantop 40mg 1-0-0 x 5 days
+  *  Tab. Chymoral 2-2-2 x 5 days
+  *  Chlorhexidine mouth wash Q/D x to continue
+  *  Syp. Heam Up 5ml 1-0-1 x 1 month
+  *  Syp. Cremaffin 5ml 1-0-1 x 5 days (in case of constipation)
+  *  Neosporin ointment for local application
+  *  Review after 3 days in Oral & Maxillofacial Surgery OPD with Dr. Sanjiv Nair
+  *  Cardiology advice on discharge: Tab. Apixaban 5mg 1-0-1 x continue, review after 1 week in cardiology OPD.
+  *  Medicine advice on discharge: Continue same treatment, monitor BP at home, review after 1 week in general medicine OPD with BP reading at home.
+
+**8. Ambiguous Handwriting:**
+
+*  Bilateral air entry(+) - The "+" mark is next to the word entry, I assume the air entry is positive bilaterally.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **Prior to January 10, 2024:**
+  *  Pre-operative Assessment for Suspected Oral Cancer
+  *  Initial Oral Lesion Evaluation
+  *  Outpatient Palate Mass Consultation
+
+*  **January 10, 2024:**
+  *  Surgical Report: Wide Excision, Neck Dissection, RFFF
+  *  Operative Note: Oral Cancer Reconstruction
+  *  Post-operative Management Plan
+
+*  **January 11, 2024:**
+  *  Post-operative Progress Note (MICU)
+
+*  **January 15, 2024:**
+  *  Discharge Summary: Post-operative Oral Cancer Excision
+  *  Post-operative Discharge Instructions
+  *  Follow-up Consultation and Medication Plan
+
+Okay, I will analyze the provided medical consultation note and extract the requested information.
+
+**1. Healthcare Facility:**
+
+*  **Name:** VIKRAM HOSPITAL
+*  **Location:** Bengaluru
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sanjiv Nair
+*  **Credentials/Title:** (Not explicitly stated, but implied to be a referring physician)
+*  **Specialization:** Maxillofacial (Implied based on the note "Maxillofacial" and referral by Dr. Sanjiv Nair.)
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. RUPA AICH
+*  **Patient ID or Number:** IP-1
+
+**4. Consultation Dates:**
+
+*  2019-11-28
+*  2019-11-29
+*  2019-12-04
+
+**5. Clinical Findings (Date-wise):**
+
+*  **2019-11-28 (Collected On):** Excision biopsy of a right palatal verrucous lesion.
+*  **2019-11-29 (Received On):** N/A - Date of sample reception.
+*  **2019-12-04 (Reported On):**
+  *  Single mucosa-covered tissue bit measuring 7x2.5x1cm.
+  *  External surface mucosa shows a verrucous area covering the entire mucosa measuring 7x2.5x1.8cm.
+  *  Histological findings:
+    *  Hyperplastic squamous epithelium with hyperkeratosis, parakeratosis, and papillomatosis.
+    *  Irregular downward projection of rete ridges with squamous pearls.
+    *  Surface epithelium shows koilocytic changes.
+    *  Subepithelial infiltration by dense lymphocytes, plasma cells, and neutrophils.
+    *  Intraepithelial neutrophilic abscesses formed at places.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **2019-12-04:** Inflammatory verrucous hyperplasia (Pseudo epitheliomatous hyperplasia). No evidence of malignancy.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **2019-11-28:** Excision biopsy performed.
+*  **2019-12-04:** Kindly correlate clinically. (Implies further clinical assessment in light of pathology findings).
+
+**8. Ambiguous Handwriting:**
+
+*  "verr-----" in the Macroscopy section, describing the external surface of the mucosa.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **2019-11-28:**
+  *  Excision Biopsy Report
+  *  Surgical Pathology Consultation
+  *  Verrucous Lesion Excision Summary
+*  **2019-12-04:**
+  *  Surgical Pathology Report
+  *  Histopathology Assessment
+  *  Verrucous Hyperplasia Diagnosis
+
+Based on the context of the report, "Dr. Sanjiv Nair" is likely a referring physician in the field of Maxillofacial surgery. It appears that the patient was referred to the laboratory for a surgical pathology report based on an excision biopsy. The final diagnosis indicates Inflammatory verrucous hyperplasia, which warrants clinical correlation to guide further management.
+
+Okay, I will analyze the medical consultation note and extract the requested information.
+
+Here's the structured analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** LIFE LINE DIAGNOSTIC CENTRE CUM NURSING HOME
+*  **Location:** 4A, WOOD STREET, KOL-700 016, Kolkata (Near Vardhan Market, Camac St.)
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Sekhar Chakraborty
+*  **Credentials/Title:** BDS, MDS, FDS RCS, Eng., Consultant Oral & Maxillofacial Surgeon
+*  **Specialization:** Oral & Maxillo-Facial Oncology, Traumatology, Temporomandibular Joint Surgery & Salivary Gland Diseases
+
+**3. Patient Details:**
+
+*  **Full Name:** Mrs. Rupa Aich
+*  **Patient ID or Number:** Not available
+
+**4. Consultation Date(s):**
+
+*  02/06/15 (June 2, 2015)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **02/06/15:** Post-operative review. The note indicates the patient is "All well".
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **02/06/15:** Post-operative recovery is proceeding well.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **02/06/15:**
+  *  Review after 4 months.
+  *  Continue \[Grape seed?\]. (Ambiguous handwriting - "Grape seed" is uncertain).
+
+**8. Ambiguous Handwriting:**
+
+*  The medication or supplement written after "Continue" is difficult to decipher. It appears to be "Grape seed" but could be something else.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **02/06/15:**
+  *  Post-Operative Review Summary
+  *  Clinical Follow-up Note
+  *  Surgical Outcome Assessment
+
+Okay, I will analyze the provided medical consultation note and extract the requested information.
+
+Here's a structured analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital
+*  **Location:** Bengaluru, India (Millers Road, Opp. St. Anne's College, Bengaluru - 560052)
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kumar Shah
+*  **Credentials/Title:** Consultant Maxillofacial Surgeon, (MDS., FDS., FFD., FICOI)
+*  **Specialization:** Maxillofacial Surgery
+
+**3. Patient Details:**
+
+*  **Full Name:** RUVA Auna (Likely "Aruna", handwriting unclear)
+
+**4. Consultation Dates:**
+
+*  08/10/19
+*  12/11/19
+
+**5. Clinical Findings (Date-wise):**
+
+*  **08/10/19:**
+  *  Maxillary hyperplasia still present.
+  *  No new symptoms.
+  *  Now extending from right to left.
+  *  Mobility of 321 (*likely tooth numbers*).
+
+*  **12/11/19:**
+  *  CT scan - suggestion of Nedi
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **08/10/19:** Implied diagnosis related to maxillary hyperplasia and associated symptoms.
+*  **12/11/19:** Need examination of union + plate, Confirm Mobilty for neck dissection.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **08/10/19:**
+  *  CT with contrast for assessment of maxilla to week (*Likely means weekly follow-up*).
+
+*  **12/11/19:**
+  *  Needs wide excision of the palate.
+  *  Planned procedure details: 2-hour surgery under General Anesthesia (GA) with an anticipated 2-day hospital stay.
+  *  Confirm histology for neck dissection
+
+**8. Ambiguous Handwriting:**
+
+*  "Rura Auna" - Patient name might be "Ruva Aruna" or "Rura Alla" .
+*  "pernity" - unclear, possibly "persist" or similar.
+*  "extendy" - Probably "extending"
+*  "rygatom" - could be 'region'
+*  "Weeh" - Probably 'Need'
+*  "exon" - "excision"
+*  "dusection" - "dissection"
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **08/10/19:**
+  *  Maxillofacial Consultation Note
+  *  Hyperplasia Assessment Report
+  *  Radiological Investigation Order
+
+*  **12/11/19:**
+  *  Surgical Treatment Plan
+  *  Palatal Excision Protocol
+  *  Pre-operative Assessment
+
+**Important Considerations:**
+
+*  The note is brief and relies heavily on shorthand and implied information.
+*  Definitive diagnoses are not explicitly stated but can be inferred from the findings and planned procedures.
+*  Histological confirmation is essential for accurate diagnosis and treatment planning, particularly regarding the need for neck dissection.
+
+I hope this analysis is helpful. Let me know if you have any other questions.
+
+Okay, I will analyze the provided image and extract the requested medical information. Here is the structured analysis of the consultation note:
+
+**1. Healthcare Facility:**
+
+*  Name: Not explicitly stated in the document but inferred to be affiliated with the contact information provided for Oral and Maxillofacial Surgery.
+*  Location: Not explicitly stated.
+
+**2. Consulting Physician:**
+
+*  Full Name: Dr. Sanjiv Nair
+*  Credentials/Title: Consultant Maxillofacial Surgeon
+*  Specialization: Oral and Maxillofacial Surgery
+
+**3. Patient Details:**
+
+*  Full Name: Mrs. Rupa Aich
+*  Patient ID: 726753
+*  In-Patient No: 235162
+
+**4. Consultation Date(s):**
+
+*  Only the discharge date is implied. No explicit dates are mentioned on the provided page.
+
+**5. Clinical Findings (Date-wise):**
+
+*  **Discharge Date:**
+  *  No specific clinical findings are documented on this page. The note indicates the patient has understood the discharge advice and needs to follow up.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **Discharge Date:**
+  *  No specific diagnosis is mentioned. The note suggests a prior assessment leading to the discharge.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **Discharge Date:**
+  *  Follow-up is recommended. No further treatment details are present.
+
+**8. Ambiguous Handwriting:**
+
+*  There are no handwritten sections on this page.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **Discharge Date:**
+  *  Discharge Summary
+  *  Follow-up Recommendation
+  *  Post-operative Instructions
+  *  Discharge Note
+
+I have extracted and structured the information from the image as accurately as possible. Please note the limitations due to the absence of specific dates and clinical details on the provided page.
+Based on the search results, here's some additional information about Dr. Sanjiv Nair:
+
+*  He is associated with multiple hospitals including Bhagwan Mahaveer Jain Hospital, Columbia Asia hospitals and B.M Jain Hospital in Bangalore.
+*  He is the Head of Department of Oral and Maxillofacial Surgery at the Bangalore Institute of Dental Sciences And Research.
+*  He has over 18 years of experience in Maxillofacial Surgery.
+*  He is the President of the International Association of Oral & Maxillofacial Surgeons.
+*  He completed his fellowship at the Royal College of Surgeons in Ireland.
+*  His surgical interests include ablation and reconstruction of orofacial malignancy, surgical treatment of vascular disorders and salivary gland surgeries.
+
+Okay, I will analyze the medical consultation note and extract the requested information as accurately as possible.
+
+Here is the analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  Name: Likely Vikram Hospital (based on the letterhead visible at the bottom of the image, though partially obscured).
+*  Location: Likely Bangalore, India (based on the hospital website address visible at the bottom of the image: www.vikram[...].in)
+
+**2. Consulting Physician:**
+
+*  Full Name: Dr. Anyam (Handwriting may make this inaccurate).
+*  Credentials/Title: Dr.
+*  Specialization: Unable to determine from the note.
+
+**3. Patient Details:**
+
+*  Full Name: Not available in the visible portion of the note.
+*  Patient ID or Number: Likely "23875" (present on prescription).
+
+**4. Consultation Dates:**
+
+*  September 12, 2019 (9/12/19)
+*  December 12, 2019 (12/12/19)
+*  December 14, 2019 (14/12/19)
+*  January 11, 2020 (11/1/20)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **September 12, 2019:** Review done, patient doing well.
+*  **December 12, 2019:** Check-up done. Sore spots on shallow vestibule (right side) surgical area present. Dentine trimmed.
+*  **December 14, 2019:** "Orahen pro Mouth wash" - at 10:00 am.
+*  **January 11, 2020:** Healing well. No sign of hyperplastic tissue.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **September 12, 2019:** Post-operative review, satisfactory progress.
+*  **December 12, 2019:** Localized inflammation/irritation of the surgical site within the right buccal vestibule.
+*  **December 14, 2019:** Not explicitly diagnostic, but related to post-operative care.
+*  **January 11, 2020:** Resolution of hyperplasia or inflammation
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **September 12, 2019:** None noted.
+*  **December 12, 2019:** Rinse on Friday @ 12pm.
+*  **December 14, 2019:** Orahen Pro Mouthwash prescribed.
+*  **January 11, 2020:** Review in 2 weeks for re-line.
+
+**8. Ambiguous Handwriting:**
+
+*  "Mouth wenk" - Could potentially be "Mouth wash".
+*  "Orahen pro" - Could potentially be another drug prescription.
+*  "highl ndi" - Likely means "right side" in shorthand.
+*  Physician's signature is illegible.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **September 12, 2019:**
+  *  Post-operative Evaluation Summary
+  *  Clinical Progress Note
+  *  Patient Review Record
+*  **December 12, 2019:**
+  *  Post-operative Site Assessment
+  *  Localized Inflammation Evaluation
+  *  Vestibular Examination Report
+*  **December 14, 2019:**
+  *  Prescription Note
+  *  Medication Order
+  *  Mouthwash Prescription
+*  **January 11, 2020:**
+  *  Post-treatment Healing Assessment
+  *  Resolution of Hyperplasia Note
+  *  Clinical Follow-up Report
+
+**Additional Notes:**
+
+*  The prescription section at the top of the image seems unrelated to these consultation notes, or at least not explicitly connected by date.
+*  "R/v" is used as an abbreviation for review.
+*  The term "hyperplastic tissue" indicates an abnormal increase in the number of cells in a tissue.
+*  "Vestibule" is referring to the oral vestibule, which is the space inside the mouth between the teeth/gums and the inner lining of the cheeks and lips.
+*  It's essential to verify the physician's name and Vikram Hospital's exact address for accuracy.
+
+Okay, I will analyze the provided serology report and extract the requested information.
+
+1. **Healthcare Facility:**
+
+  *  Name: VIKRAM HOSPITAL
+  *  Location: Bengaluru
+2. **Consulting Physician:**
+
+  *  Full Name: Dr. Swetha K
+  *  Credentials/Title: Consultant Microbiologist, MD Microbiology (KMC No.69169)
+  *  Specialization: Microbiology
+3. **Patient Details:**
+
+  *  Full Name: Mrs. RUPA AICH
+  *  Patient ID or Number: OP-4 (Visit/IP#)
+4. **Consultation Dates:**
+
+  *  Collected On: 2019-11-16
+  *  Received On: 2019-11-16
+  *  Reported On: 2019-11-16
+  *  Printed On: 2019-11-22
+5. **Clinical Findings (Date-wise):**
+
+  *  2019-11-16: The patient, Mrs. RUPA AICH, a 66-year-old female, was referred by Dr. Anjan Shah at the OPD. Specimen collected was serum.
+6. **Assessment/Diagnosis (Date-wise):**
+
+  *  2019-11-16: Based on the serology report, the patient is non-reactive for HCV Antibodies, HBsAg, and HIV 1 and 2 (P24 Antigen and Antibody).
+
+7. **Recommendations & Treatment Plan (Date-wise):**
+
+  *  2019-11-16: No specific treatment plan or recommendations are mentioned in the provided document, only serological test results.
+8. **Ambiguous Handwriting:**
+
+  *  There is no ambiguous handwriting in the report
+
+9. **Suggested Professional Titles (Date-wise):**
+
+  *  2019-11-16:
+    *  Serology Report
+    *  Microbiology Consultation Report
+    *  Infectious Disease Screening
+    *  Laboratory Medicine Report
+
+The information has been extracted and structured as requested from the serology report.
+
+Okay, I will analyze the medical consultation note from the image and extract the requested information, organizing it by date.
+
+**1. Healthcare Facility:**
+
+*  **Name:** Vikram Hospital
+*  **Location:** Bengaluru, India (Millers Road address)
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kumar Shah
+*  **Credentials/Title:** MDS, FDS, FFD, FICOI
+*  **Specialization:** Consultant Maxillofacial Surgeon
+
+**3. Patient Details:**
+
+*  Full Name: Not available
+*  Patient ID or Number: Not available
+
+**4. Consultation Dates:**
+
+*  February 11, 2014 (2/11/14)
+*  July 12, 2014 (7/12/14) - Saturday
+*  July 12, 2019 (7/12/19)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **February 11, 2014:**
+  *  Pain in ear/jaw
+  *  No swelling, bloody infection
+  *  Denture is stable.
+*  **July 12, 2019:**
+  *  Review done.
+  *  Patient doing well.
+  *  Denture trimmed.
+  *  Mobility of 1st tooth grade ist 54+
+  *  Lingual splinting done 1st tooth grade ist 543 + composite.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **February 11, 2014:**
+  *  Implied: Ear/Jaw pain likely related to infection.
+*  **July 12, 2019:**
+  *  Implied: Maintenance and adjustment of denture; lingual splinting due to tooth mobility.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **February 11, 2014:**
+  *  Not available
+*  **July 12, 2019:**
+  *  Review after a week
+  *  Prescription:
+    *  Lignocaine gel 2%
+    *  T. Hifenac p 1-0-1 x 3 days
+
+**8. Ambiguous Handwriting:**
+
+*  On 2/11/14: "Pain (n) ear/jaw" - The "(n)" might be indicating a specific side or note.
+*  Mobility ist st 54+ - The words may be describing grade of the mobility but it is difficult to decypher grade.
+*  543- difficult to decypher the number
+*  T. Hifenac P - it is hard to decypher the drug name.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **February 11, 2014:**
+  *  Initial Consultation Note
+  *  Infection Assessment
+  *  Orofacial Pain Evaluation
+*  **July 12, 2019:**
+  *  Post-operative Review
+  *  Denture Adjustment and Splinting
+  *  Follow-up Treatment Plan
+
+Based on the search results, "Hifenac P" is a combination medicine containing Aceclofenac and Paracetamol (Acetaminophen). It's a non-steroidal anti-inflammatory drug (NSAID) used for pain relief, reducing inflammation, and managing fever. It is commonly prescribed for dental pain and other musculoskeletal conditions.
+
+Okay, I will analyze the medical consultation note and extract the required information.
+
+Here's the structured analysis of the medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** Aster CMI Hospital
+*  **Location:** \#43/2, New Airport Road, NH.7, Sahakara Nagar, Hebbal, Bangalore, Karnataka 560092, India.
+
+**2. Consulting Physician:**
+
+*  **Full Name:** Dr. Anjan Kuamr Shah
+*  **Credentials/Title:** (Based on search results) Oral & Maxillofacial Surgeon
+*  **Specialization:** Head & Neck Surgery, facial reconstruction with microvascular flaps and rehabilitation with implants.
+
+**3. Patient Details:**
+
+*  **Full Name:** RUPA AICH
+*  **Patient ID/Number (UHID):** 700283370
+
+**4. Consultation Dates:**
+
+*  2025-02-27
+*  2025-02-28
+
+**5. Clinical Findings (Date-wise):**
+
+*  **2025-02-27:** CT, PT scan.
+*  **2025-02-28:**
+  *  Pancreas: Normal in size, contour and attenuation. No evidence of focal mass/lesion or pancreatic duct dilatation. Post-contrast, no significant findings.
+  *  Kidneys: Normal in size and shape. No focal mass lesion/hydronephrosis/calculi. Few small left renal cortical cysts noted. Bilateral simple renal cortical cysts noted, largest ~18 x 18mm. Normal renal outlines with good concentration and prompt contrast excretion. Visualized ureter portions are normal.
+  *  Adrenal Glands: Normal in size, shape and attenuation.
+  *  Aorta and Extra Hepatic Portion of Inferior Vena Cava: Normal in calibre.
+  *  No Ascites.
+  *  Small/Large Bowel Loops: Appear normal. No stricture or dilated bowel loop abnormality.
+  *  Mesentery: Normal in visualized sections.
+  *  Urinary Bladder: Normal size and signal intensity. No focal mass lesion. Well-maintained surrounding fat planes. Mild irregular bladder wall thickening measuring ~8.3mm, suggesting cystitis.
+  *  Uterus: Atrophic with Lippe's loop IUCD in situ. No adnexal abnormality.
+  *  Musculo-Skeletal System:
+    *  No abnormal FDG avid lytic or sclerotic lesions in visualized bones.
+    *  Partial excision of the right maxillary alveolar process is noted associated with soft tissue graft (fat density) in the right buccal/maxillary regions as described with focal uptake in the left mandible as described above.
+    *  Degenerative changes noted in visualized spine with marginal osteophytes.
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **2025-02-28:** Cystitis (based on mild irregular bladder wall thickening). Degenerative changes in the spine and status post partial excision of the right maxillary alveolar process.
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **2025-02-27:** CT,PT scan
+*  **2025-02-28:** No specific treatment plan mentioned. Follow-up may be warranted for cystitis and degenerative spine changes.
+
+**8. Ambiguous Handwriting:**
+
+*  Kuamr (in Dr. Anjan Kuamr Shah) - Assuming this is Kumar.
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **2025-02-27:** Imaging Study Ordered, Radiology Request
+*  **2025-02-28:**
+  *  Radiology Report Summary
+  *  Clinical Imaging Review
+  *  Musculoskeletal and Abdominal Imaging Assessment
+
+Okay, I will analyze the provided medical note and extract the requested information.
+
+**1. Healthcare Facility:**
+
+*  **Name:** The Calcutta Medical Research Institute (CMRI)
+*  **Location:** 7/2, Diamond Harbour Road, Kolkata-700 027
+
+**2. Consulting Physician:**
+
+*  **Full Name:** DR. SEKHAR CHAKRABORTY
+*  **Credentials/Title:** (Not explicitly stated, presumed to be Dr.)
+*  **Specialization:** (Implied Dental based on department noted in the document)
+
+**3. Patient Details:**
+
+*  **Full Name:** RUPA AICH
+*  **Patient ID or Number:** PANA000191462, PUKA001693384
+
+**4. Consultation Dates:**
+
+*  2/4/2015 (Admission Date)
+*  3/4/2015 (Operation Date)
+*  6/4/2015 (Blood Investigation Date)
+*  10/4/2015 (Discharge Date)
+
+**5. Clinical Findings (Date-wise):**
+
+*  **2/4/2015 (Admission):**
+  *  Chief Complaints: Burning sensation in cheek, decreased mouth opening.
+  *  On examination: Temperature - 98.4°F, Heart Rate - 85/min, Respiratory Rate - 20/min, Blood Pressure - 130/90 mmHg.
+  *  2cm white non-scrapable white patch in left cheek.
+  *  Decreased mouth opening.
+  *  Submucous fibrosis of both cheeks.
+  *  S1 S2 audible, Bilaterally clear breath sounds.
+
+*  **3/4/2015 (Operation):** (Findings are implicit in the procedure, see below)
+
+*  **6/4/2015 (Blood Investigation):** (Only lab values are listed)
+
+*  **10/4/2015 (Discharge):** (No specific findings listed, implies condition is stable/improved)
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **2/4/2015 (Admission):** Leukoplakia + Oral Submucous Fibrosis of both cheeks.
+
+*  **3/4/2015 (Operation):** (The procedure implies confirmation/treatment of the diagnosed conditions)
+
+*  **6/4/2015 (Blood Investigation):** (No diagnosis can be made from blood investigation date only)
+
+*  **10/4/2015 (Discharge):** (Diagnosis remains as above).
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **2/4/2015 (Admission):**
+  *  X-Ray Chest PA view (erect): Lung fields are clear. Costophrenic angles, domes of the diaphragm, both hilar shadows, cardiac shadow and aorta appear normal.
+
+*  **3/4/2015 (Operation):**
+  *  Excision of leukoplakia patch from left cheek.
+  *  Excision and release of fibrous band from both cheeks.
+  *  Repair with buccal pad fat and radial forearm graft.
+  *  10cc Local Anesthetic with adrenaline infiltrated in both cheeks.
+  *  Extraction of upper right and left 2nd molars, upper right 1st and upper left 3rd molars, and lower left 1st and 2nd molars.
+  *  Excision of left cheek fibrous band and repair with buccal pad fat using 3-0 vicryl suture.
+  *  Excision of white patch from right cheek.
+  *  Send for Histopathological Examination (HPE).
+  *  Excision of fibrous band from right cheek and repair with radial forearm graft from left arm.
+  *  Blood circulation of radial forearm graft maintained anastomosing radial artery & vein with superior thyroid artery & common facial vein.
+
+*  **6/4/2015 (Blood Investigation):** (No treatment plan specified on this date, just blood investigation.)
+
+**8. Ambiguous Handwriting:**
+
+*  "Blaw clear." Possibly "bowel sounds clear" however, it is situated near the S1 S2 auscultation, so this is uncertain.
+*  "uing radial forearm graft" may be "using radial forearm graft"
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **2/4/2015 (Admission):**
+  *  Initial Consultation Report
+  *  Admission Assessment
+  *  Pre-operative Evaluation
+
+*  **3/4/2015 (Operation):**
+  *  Surgical Report
+  *  Operative Note
+  *  Procedure Summary
+  *  Surgical Excision and Reconstruction Summary
+
+*  **10/4/2015 (Discharge):**
+  *  Discharge Summary
+  *  Post-operative Report
+
+I have extracted and structured the information from the provided image as accurately as possible.
+I have gathered additional information to enhance the response.
+
+**Oral Submucous Fibrosis (OSMF) and Leukoplakia:** These are considered oral potentially malignant disorders (OPMDs) that are most commonly seen in South Asia and Southeast Asian countries. Leukoplakia is often linked to tobacco use, while OSMF is often associated with areca/betel nut use.
+
+**Buccal Fat Pad Graft:** This involves using the buccal fat pad, a specialized fat located among the masticator muscles, for reconstruction. It can be used as a pedicled flap or a free graft to fill defects in the oral cavity and has a good blood supply.
+
+**Radial Forearm Flap:** This flap, including skin, fascia, and blood vessels from the forearm, is commonly used for head and neck reconstruction after cancer removal. It has the advantage of not shrinking significantly after healing, which helps preserve speech and swallowing function.
+
+**CAP and NABL Accreditations:** The College of American Pathologists (CAP) and the National Accreditation Board for Testing and Calibration Laboratories (NABL) are accreditation bodies that ensure laboratories adhere to high-quality standards and best practices. CMRI is accredited by both.
+
+Here's an analysis of the provided medical consultation note:
+
+**1. Healthcare Facility:**
+
+*  **Name:** CARE DENTAL CLINIC'S, CARE ORAL PATHOLOGY SERVICES
+*  **Location:** 1st Floor, Gurukrupa Building, 44, Nagappa Street, Near Swastic Circle, Seshadripuram, Bangalore-20
+
+**2. Consulting Physician:**
+
+*  **Referring Physician:** Dr. Anjan Shah/Aster CMI Hospital
+*  **Pathologists:**
+
+  *  Dr. Radhika M. Bavle, MDS
+  *  Dr.Satyajit S. Topajiche, MDS
+  *  Dr. Soumya Makarla, MDS
+
+**3. Patient Details:**
+
+*  **Full Name:** Ms. Rupa Aich
+*  **Patient ID:** COPS 463
+
+**4. Consultation Date(s):**
+
+*  01/01/2024
+
+**5. Clinical Findings (Date-wise):**
+
+*  **01/01/2024:** Mid-palatal lesion. The lesion is described as ulcero-proliferative. A 1.8cm incisional biopsy was performed.
+*  **Histopathology Findings:** The section reveals parakeratinized dysplastic epithelium with pronounced hyperplasia and hypertrophy along with keratin plugging. Basal cell hyperplasia is noted in the bulbous rete ridges invading the submucosa. Dyskeratosis with epithelial and keratin pearls is present with individual cell keratinization. Invasion is present into connective tissue with small and large islands. The dysplastic epithelium shows multiple nucleoli, eosinophilic nucleoli and presence of mitotic figures (10-11/10 HPF) in the basal and parabasal areas involving the invasive edge. Abnormal mitosis noted. The stroma displays dense inflammation, rich in lymphocytes, plasma cells and eosinophils. Multiple mucous acini and ducts are noted along with dense inflammation near the invasive edge (type 3).
+
+**6. Assessment/Diagnosis (Date-wise):**
+
+*  **01/01/2024:** Features suggestive of "Invasive Squamous Cell Carcinoma". Verrucous Carcinoma converting into Invasive Squamous Cell Carcinoma
+  *  Clinical variant: Ulcero-proliferative
+  *  H/P Variant: Conventional
+  *  H/P Grade (Broders): Well differentiated
+
+**7. Recommendations & Treatment Plan (Date-wise):**
+
+*  **01/01/2024:** The report indicates a histopathological diagnosis based on an incisional biopsy. Further recommendations would depend on clinical correlation and staging, and are not explicitly stated in this report. The need for excision, further imaging, and treatment planning would be determined by the referring physician (Dr. Anjan Shah) in conjunction with other specialists.
+
+**8. Ambiguous Handwriting:**
+
+*  "Dagnoung Oral & trefacsa Pithinlnges-Insele cut"
+
+**9. Suggested Professional Titles (Date-wise):**
+
+*  **01/01/2024:**
+  *  Histopathology Report
+  *  Oral Pathology Consultation Report
+  *  Invasive Squamous Cell Carcinoma Diagnosis
