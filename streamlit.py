@@ -136,12 +136,18 @@ Only return JSON. No explanation.
         font = style.font
         font.name = 'Calibri'
         font.size = Pt(11)
-
+        def clean_markdown(text):
+                text = re.sub(r"\*\*(.*?)\*\*", r"\1", text)  # bold
+                text = re.sub(r"\*(.*?)\*", r"\1", text)      # italic
+                text = re.sub(r"`(.*?)`", r"\1", text)        # inline code
+                text = re.sub(r"#+\s", "", text)              # remove markdown headings like ## Header
+                return text.strip()
+        
         for msg in st.session_state.messages:
             if msg["role"] == "assistant":
                 content = msg["content"].strip()
                 for line in content.split("\n"):
-                    line = line.strip()
+                    line = clean_markdown(line.strip())
                     if not line:
                         continue
                     if line.endswith(":") and len(line.split()) < 10:
@@ -149,7 +155,7 @@ Only return JSON. No explanation.
                     elif re.match(r"^[-\u2022]\s", line):
                         doc.add_paragraph(line[2:].strip(), style='List Bullet')
                     else:
-                        doc.add_paragraph(line.strip())
+                        doc.add_paragraph(line)
 
         section = doc.sections[0]
         footer_para = section.footer.paragraphs[0]
@@ -277,12 +283,12 @@ Only return JSON. No explanation.
 
 # --------------------- TAB 2 ---------------------
 with tab2:
-    st.subheader("📝 Upload and Modify Existing Tender Document")
+    st.subheader("📝 Upload and Chat to Modify Existing Tender Document")
 
     uploaded_file = st.file_uploader("Upload a Tender Document (.docx or .pdf)", type=["docx", "pdf"])
     extracted_text = ""
 
-    if uploaded_file:
+    if uploaded_file and "tab2_uploaded" not in st.session_state:
         if uploaded_file.name.endswith(".pdf"):
             doc = fitz.open(stream=uploaded_file.read(), filetype="pdf")
             extracted_text = "\n".join([page.get_text() for page in doc])
@@ -290,46 +296,110 @@ with tab2:
             doc = Document(uploaded_file)
             extracted_text = "\n".join([para.text for para in doc.paragraphs])
 
-        st.text_area("📄 Extracted Content (Read-only)", extracted_text, height=400, disabled=True)
+        st.session_state.tab2_uploaded = extracted_text
 
-        user_edit_input = st.text_area("✏️ What would you like to modify or add?", placeholder="e.g., Change deadline to 30th June...")
+        # Step 1: AI Suggestions
+        with st.spinner("Analyzing document and suggesting edits..."):
+            suggestion_prompt = f"""
+You're an AI that reviews tender documents and suggests improvements.
 
-        if st.button("🔁 Apply Changes"):
-            with st.spinner("Applying changes via Gemini..."):
-                edit_prompt = f"""
-You are a tender document editor AI. Here is the current content of the tender document:
-
+Here is the tender content:
 \"\"\"{extracted_text}\"\"\"
 
-Apply the following user instructions:
-\"\"\"{user_edit_input}\"\"\"
-
-Return the full updated tender content.
+Suggest 3 to 5 specific improvements in this format:
+- Suggestion 1
+- Suggestion 2
 """
-                editor_session = client.chats.create(
-                    model="gemini-2.0-flash",
-                    config=types.GenerateContentConfig(system_instruction="You edit documents based on user instructions.")
+            suggestion_chat = client.chats.create(
+                model="gemini-2.0-flash",
+                config=types.GenerateContentConfig(
+                    system_instruction="You review tenders and suggest improvements.",
+                    response_mime_type="text/plain"
                 )
-                result = editor_session.send_message(edit_prompt)
-                modified_text = result.text.strip()
+            )
+            suggestion_response = suggestion_chat.send_message(suggestion_prompt)
+            suggestions = suggestion_response.text.strip()
+            st.session_state.tab2_suggestions = [s.lstrip("- ").strip() for s in suggestions.split("\n") if s.strip()]
 
-                st.success("✅ Modifications applied. Preview below:")
-                st.text_area("📝 Updated Document", modified_text, height=400)
+        st.success("✅ Suggestions loaded. Start chatting to apply changes.")
 
-                def generate_docx_from_text(text):
-                    doc = Document()
-                    for para in text.split("\n"):
-                        doc.add_paragraph(para.strip())
-                    buffer = BytesIO()
-                    doc.save(buffer)
-                    buffer.seek(0)
-                    return buffer
+        # Step 2: Initialize chat session & messages
+        st.session_state.tab2_chat = client.chats.create(
+            model="gemini-2.0-flash",
+            config=types.GenerateContentConfig(
+                system_instruction=f"You are editing a tender document based on user instructions. The current content is:\n\n'''{st.session_state.tab2_uploaded}'''\n\nApply any user changes and return the full updated document.",
+                response_mime_type="text/plain"
+            )
+        )
+        st.session_state.tab2_messages = []
 
-                final_docx = generate_docx_from_text(modified_text)
+    # --- If document uploaded and chat ready ---
+    if "tab2_chat" in st.session_state:
+        st.info("💡 Gemini Suggestions:")
+        for suggestion in st.session_state.tab2_suggestions:
+            if st.button(suggestion, key=f"suggest_{suggestion}"):
+                # Act as if user entered this message in chat
+                with st.chat_message("user"):
+                    st.markdown(suggestion)
+                st.session_state.tab2_messages.append({"role": "user", "content": suggestion})
 
-                st.download_button(
-                    label="📥 Download Updated Document (.docx)",
-                    data=final_docx,
-                    file_name="Updated_Tender_Document.docx",
-                    mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                )
+                with st.spinner("Applying suggestion..."):
+                    response = st.session_state.tab2_chat.send_message(suggestion)
+                    ai_reply = response.text.strip()
+
+                with st.chat_message("assistant"):
+                    st.markdown(ai_reply)
+                st.session_state.tab2_messages.append({"role": "assistant", "content": ai_reply})
+                st.session_state.tab2_last_updated_doc = ai_reply
+                st.rerun()
+
+        # Show all previous chat messages
+        for msg in st.session_state.tab2_messages:
+            with st.chat_message(msg["role"]):
+                st.markdown(msg["content"])
+
+        user_input = st.chat_input("Describe your change...")
+        if user_input:
+            with st.chat_message("user"):
+                st.markdown(user_input)
+            st.session_state.tab2_messages.append({"role": "user", "content": user_input})
+
+            with st.spinner("Applying changes..."):
+                response = st.session_state.tab2_chat.send_message(user_input)
+                ai_reply = response.text.strip()
+
+            with st.chat_message("assistant"):
+                st.markdown(ai_reply)
+            st.session_state.tab2_messages.append({"role": "assistant", "content": ai_reply})
+            st.session_state.tab2_last_updated_doc = ai_reply
+            st.rerun()
+
+        # Show export button if we have a final draft
+        if "tab2_last_updated_doc" in st.session_state:
+            def clean_markdown(text):
+                text = re.sub(r"\*\*(.*?)\*\*", r"\1", text)  # bold
+                text = re.sub(r"\*(.*?)\*", r"\1", text)      # italic
+                text = re.sub(r"`(.*?)`", r"\1", text)        # inline code
+                text = re.sub(r"#+\s", "", text)              # remove markdown headings like ## Header
+                return text.strip()
+            
+            def generate_docx_from_text(text):
+                doc = Document()
+                for para in text.split("\n"):
+                    para = clean_markdown(para.strip())
+                    doc.add_paragraph(para)
+                buffer = BytesIO()
+                doc.save(buffer)
+                buffer.seek(0)
+                return buffer
+
+
+            final_docx = generate_docx_from_text(st.session_state.tab2_last_updated_doc)
+
+            st.download_button(
+                label="📥 Download Final Updated Document (.docx)",
+                data=final_docx,
+                file_name="Final_Updated_Tender.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            )
+
